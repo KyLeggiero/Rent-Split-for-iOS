@@ -7,65 +7,41 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B93BC6A12877613100767701 /* Rent_SplitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B93BC6A02877613100767701 /* Rent_SplitApp.swift */; };
-		B93BC6A32877613100767701 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B93BC6A22877613100767701 /* ContentView.swift */; };
-		B93BC6A52877613600767701 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B93BC6A42877613600767701 /* Assets.xcassets */; };
-		B93BC6A82877613600767701 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B93BC6A72877613600767701 /* Preview Assets.xcassets */; };
-		B93BC6B32877613600767701 /* Rent_SplitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B93BC6B22877613600767701 /* Rent_SplitTests.swift */; };
-		B93BC6BD2877613600767701 /* Rent_SplitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B93BC6BC2877613600767701 /* Rent_SplitUITests.swift */; };
-		B93BC6BF2877613600767701 /* Rent_SplitUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B93BC6BE2877613600767701 /* Rent_SplitUITestsLaunchTests.swift */; };
+		B94A53082879603800C369F8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B93BC6A22877613100767701 /* ContentView.swift */; };
+		B94A53092879603900C369F8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B93BC6A22877613100767701 /* ContentView.swift */; };
+		B94A530A2879603D00C369F8 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = B93BC6A02877613100767701 /* App.swift */; };
+		B94A530B2879603D00C369F8 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = B93BC6A02877613100767701 /* App.swift */; };
+		B99C79D52879623F00FC5E0C /* RentSplitTools in Frameworks */ = {isa = PBXBuildFile; productRef = B99C79D42879623F00FC5E0C /* RentSplitTools */; };
+		B99C79D72879624500FC5E0C /* RentSplitTools in Frameworks */ = {isa = PBXBuildFile; productRef = B99C79D62879624500FC5E0C /* RentSplitTools */; };
+		B99C79D9287962A000FC5E0C /* MoneySplitter + SwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B99C79D8287962A000FC5E0C /* MoneySplitter + SwiftUI.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		B93BC6AF2877613600767701 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B93BC6952877613100767701 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B93BC69C2877613100767701;
-			remoteInfo = "Rent Split";
-		};
-		B93BC6B92877613600767701 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B93BC6952877613100767701 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B93BC69C2877613100767701;
-			remoteInfo = "Rent Split";
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
-		B93BC69D2877613100767701 /* Rent Split.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rent Split.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B93BC6A02877613100767701 /* Rent_SplitApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rent_SplitApp.swift; sourceTree = "<group>"; };
+		B93BC6A02877613100767701 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
 		B93BC6A22877613100767701 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B93BC6A42877613600767701 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B93BC6A72877613600767701 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		B93BC6A92877613600767701 /* Rent_Split.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Rent_Split.entitlements; sourceTree = "<group>"; };
-		B93BC6AE2877613600767701 /* Rent SplitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Rent SplitTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B93BC6B22877613600767701 /* Rent_SplitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rent_SplitTests.swift; sourceTree = "<group>"; };
-		B93BC6B82877613600767701 /* Rent SplitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Rent SplitUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B93BC6BC2877613600767701 /* Rent_SplitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rent_SplitUITests.swift; sourceTree = "<group>"; };
-		B93BC6BE2877613600767701 /* Rent_SplitUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rent_SplitUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B94A52E828795EE000C369F8 /* RentSplitTools */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = RentSplitTools; path = lib/RentSplitTools; sourceTree = "<group>"; };
+		B94A52F428795F9900C369F8 /* Rent Split.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rent Split.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B94A52F928795F9900C369F8 /* Rent Split.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rent Split.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B94A52FB28795F9900C369F8 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		B99C79D8287962A000FC5E0C /* MoneySplitter + SwiftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MoneySplitter + SwiftUI.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		B93BC69A2877613100767701 /* Frameworks */ = {
+		B94A52F128795F9900C369F8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B99C79D72879624500FC5E0C /* RentSplitTools in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B93BC6AB2877613600767701 /* Frameworks */ = {
+		B94A52F628795F9900C369F8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B93BC6B52877613600767701 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				B99C79D52879623F00FC5E0C /* RentSplitTools in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,33 +51,33 @@
 		B93BC6942877613100767701 = {
 			isa = PBXGroup;
 			children = (
-				B93BC69F2877613100767701 /* Rent Split */,
-				B93BC6B12877613600767701 /* Rent SplitTests */,
-				B93BC6BB2877613600767701 /* Rent SplitUITests */,
+				B93BC69F2877613100767701 /* Shared */,
+				B94A52FA28795F9900C369F8 /* macOS */,
+				B94A52E728795EE000C369F8 /* Packages */,
 				B93BC69E2877613100767701 /* Products */,
+				B94A52E928795F2800C369F8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		B93BC69E2877613100767701 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B93BC69D2877613100767701 /* Rent Split.app */,
-				B93BC6AE2877613600767701 /* Rent SplitTests.xctest */,
-				B93BC6B82877613600767701 /* Rent SplitUITests.xctest */,
+				B94A52F428795F9900C369F8 /* Rent Split.app */,
+				B94A52F928795F9900C369F8 /* Rent Split.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B93BC69F2877613100767701 /* Rent Split */ = {
+		B93BC69F2877613100767701 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				B93BC6A02877613100767701 /* Rent_SplitApp.swift */,
+				B93BC6A02877613100767701 /* App.swift */,
 				B93BC6A22877613100767701 /* ContentView.swift */,
+				B99C79DA287962A300FC5E0C /* Extensions */,
 				B93BC6A42877613600767701 /* Assets.xcassets */,
-				B93BC6A92877613600767701 /* Rent_Split.entitlements */,
 				B93BC6A62877613600767701 /* Preview Content */,
 			);
-			path = "Rent Split";
+			path = Shared;
 			sourceTree = "<group>";
 		};
 		B93BC6A62877613600767701 /* Preview Content */ = {
@@ -112,78 +88,87 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		B93BC6B12877613600767701 /* Rent SplitTests */ = {
+		B94A52E728795EE000C369F8 /* Packages */ = {
 			isa = PBXGroup;
 			children = (
-				B93BC6B22877613600767701 /* Rent_SplitTests.swift */,
+				B94A52E828795EE000C369F8 /* RentSplitTools */,
 			);
-			path = "Rent SplitTests";
+			name = Packages;
 			sourceTree = "<group>";
 		};
-		B93BC6BB2877613600767701 /* Rent SplitUITests */ = {
+		B94A52E928795F2800C369F8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				B93BC6BC2877613600767701 /* Rent_SplitUITests.swift */,
-				B93BC6BE2877613600767701 /* Rent_SplitUITestsLaunchTests.swift */,
 			);
-			path = "Rent SplitUITests";
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B94A52FA28795F9900C369F8 /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				B94A52FB28795F9900C369F8 /* macOS.entitlements */,
+			);
+			path = macOS;
+			sourceTree = "<group>";
+		};
+		B99C79DA287962A300FC5E0C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B99C79DB287962AC00FC5E0C /* RentSplitTools */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B99C79DB287962AC00FC5E0C /* RentSplitTools */ = {
+			isa = PBXGroup;
+			children = (
+				B99C79D8287962A000FC5E0C /* MoneySplitter + SwiftUI.swift */,
+			);
+			path = RentSplitTools;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B93BC69C2877613100767701 /* Rent Split */ = {
+		B94A52F328795F9900C369F8 /* Rent Split (iOS) */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B93BC6C22877613600767701 /* Build configuration list for PBXNativeTarget "Rent Split" */;
+			buildConfigurationList = B94A530228795F9900C369F8 /* Build configuration list for PBXNativeTarget "Rent Split (iOS)" */;
 			buildPhases = (
-				B93BC6992877613100767701 /* Sources */,
-				B93BC69A2877613100767701 /* Frameworks */,
-				B93BC69B2877613100767701 /* Resources */,
+				B94A52F028795F9900C369F8 /* Sources */,
+				B94A52F128795F9900C369F8 /* Frameworks */,
+				B94A52F228795F9900C369F8 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Rent Split";
-			productName = "Rent Split";
-			productReference = B93BC69D2877613100767701 /* Rent Split.app */;
+			name = "Rent Split (iOS)";
+			packageProductDependencies = (
+				B99C79D62879624500FC5E0C /* RentSplitTools */,
+			);
+			productName = "Rent Split (iOS)";
+			productReference = B94A52F428795F9900C369F8 /* Rent Split.app */;
 			productType = "com.apple.product-type.application";
 		};
-		B93BC6AD2877613600767701 /* Rent SplitTests */ = {
+		B94A52F828795F9900C369F8 /* Rent Split (macOS) */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B93BC6C52877613600767701 /* Build configuration list for PBXNativeTarget "Rent SplitTests" */;
+			buildConfigurationList = B94A530528795F9900C369F8 /* Build configuration list for PBXNativeTarget "Rent Split (macOS)" */;
 			buildPhases = (
-				B93BC6AA2877613600767701 /* Sources */,
-				B93BC6AB2877613600767701 /* Frameworks */,
-				B93BC6AC2877613600767701 /* Resources */,
+				B94A52F528795F9900C369F8 /* Sources */,
+				B94A52F628795F9900C369F8 /* Frameworks */,
+				B94A52F728795F9900C369F8 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				B93BC6B02877613600767701 /* PBXTargetDependency */,
 			);
-			name = "Rent SplitTests";
-			productName = "Rent SplitTests";
-			productReference = B93BC6AE2877613600767701 /* Rent SplitTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		B93BC6B72877613600767701 /* Rent SplitUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = B93BC6C82877613600767701 /* Build configuration list for PBXNativeTarget "Rent SplitUITests" */;
-			buildPhases = (
-				B93BC6B42877613600767701 /* Sources */,
-				B93BC6B52877613600767701 /* Frameworks */,
-				B93BC6B62877613600767701 /* Resources */,
+			name = "Rent Split (macOS)";
+			packageProductDependencies = (
+				B99C79D42879623F00FC5E0C /* RentSplitTools */,
 			);
-			buildRules = (
-			);
-			dependencies = (
-				B93BC6BA2877613600767701 /* PBXTargetDependency */,
-			);
-			name = "Rent SplitUITests";
-			productName = "Rent SplitUITests";
-			productReference = B93BC6B82877613600767701 /* Rent SplitUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
+			productName = "Rent Split (macOS)";
+			productReference = B94A52F928795F9900C369F8 /* Rent Split.app */;
+			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
@@ -195,16 +180,11 @@
 				LastSwiftUpdateCheck = 1340;
 				LastUpgradeCheck = 1340;
 				TargetAttributes = {
-					B93BC69C2877613100767701 = {
+					B94A52F328795F9900C369F8 = {
 						CreatedOnToolsVersion = 13.4.1;
 					};
-					B93BC6AD2877613600767701 = {
+					B94A52F828795F9900C369F8 = {
 						CreatedOnToolsVersion = 13.4.1;
-						TestTargetID = B93BC69C2877613100767701;
-					};
-					B93BC6B72877613600767701 = {
-						CreatedOnToolsVersion = 13.4.1;
-						TestTargetID = B93BC69C2877613100767701;
 					};
 				};
 			};
@@ -221,31 +201,21 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B93BC69C2877613100767701 /* Rent Split */,
-				B93BC6AD2877613600767701 /* Rent SplitTests */,
-				B93BC6B72877613600767701 /* Rent SplitUITests */,
+				B94A52F328795F9900C369F8 /* Rent Split (iOS) */,
+				B94A52F828795F9900C369F8 /* Rent Split (macOS) */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		B93BC69B2877613100767701 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B93BC6A82877613600767701 /* Preview Assets.xcassets in Resources */,
-				B93BC6A52877613600767701 /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B93BC6AC2877613600767701 /* Resources */ = {
+		B94A52F228795F9900C369F8 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B93BC6B62877613600767701 /* Resources */ = {
+		B94A52F728795F9900C369F8 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -255,46 +225,26 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		B93BC6992877613100767701 /* Sources */ = {
+		B94A52F028795F9900C369F8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B93BC6A32877613100767701 /* ContentView.swift in Sources */,
-				B93BC6A12877613100767701 /* Rent_SplitApp.swift in Sources */,
+				B99C79D9287962A000FC5E0C /* MoneySplitter + SwiftUI.swift in Sources */,
+				B94A530A2879603D00C369F8 /* App.swift in Sources */,
+				B94A53092879603900C369F8 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B93BC6AA2877613600767701 /* Sources */ = {
+		B94A52F528795F9900C369F8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B93BC6B32877613600767701 /* Rent_SplitTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B93BC6B42877613600767701 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B93BC6BF2877613600767701 /* Rent_SplitUITestsLaunchTests.swift in Sources */,
-				B93BC6BD2877613600767701 /* Rent_SplitUITests.swift in Sources */,
+				B94A530B2879603D00C369F8 /* App.swift in Sources */,
+				B94A53082879603800C369F8 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		B93BC6B02877613600767701 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = B93BC69C2877613100767701 /* Rent Split */;
-			targetProxy = B93BC6AF2877613600767701 /* PBXContainerItemProxy */;
-		};
-		B93BC6BA2877613600767701 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = B93BC69C2877613100767701 /* Rent Split */;
-			targetProxy = B93BC6B92877613600767701 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		B93BC6C02877613600767701 /* Debug */ = {
@@ -347,7 +297,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 3.0.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -401,7 +353,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 3.0.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
@@ -410,16 +364,72 @@
 			};
 			name = Release;
 		};
-		B93BC6C32877613600767701 /* Debug */ = {
+		B94A530328795F9900C369F8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "Rent Split/Rent_Split.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 26V9MK8TGP;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "me.kyleggiero.Rent-Split";
+				PRODUCT_NAME = "Rent Split";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B94A530428795F9900C369F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 26V9MK8TGP;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "me.kyleggiero.Rent-Split";
+				PRODUCT_NAME = "Rent Split";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B94A530628795F9900C369F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Rent Split/Preview Content\"";
 				DEVELOPMENT_TEAM = 26V9MK8TGP;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
@@ -429,24 +439,23 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MARKETING_VERSION = 3.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "me.kyleggiero.Rent-Split";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Rent Split";
+				SDKROOT = macosx;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
-		B93BC6C42877613600767701 /* Release */ = {
+		B94A530728795F9900C369F8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "Rent Split/Rent_Split.entitlements";
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Rent Split/Preview Content\"";
 				DEVELOPMENT_TEAM = 26V9MK8TGP;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
@@ -456,83 +465,11 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MARKETING_VERSION = 3.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "me.kyleggiero.Rent-Split";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Rent Split";
+				SDKROOT = macosx;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-			};
-			name = Release;
-		};
-		B93BC6C62877613600767701 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 26V9MK8TGP;
-				GENERATE_INFOPLIST_FILE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 12.3;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "me.kyleggiero.Rent-SplitTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Rent Split.app/Contents/MacOS/Rent Split";
-			};
-			name = Debug;
-		};
-		B93BC6C72877613600767701 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 26V9MK8TGP;
-				GENERATE_INFOPLIST_FILE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 12.3;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "me.kyleggiero.Rent-SplitTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Rent Split.app/Contents/MacOS/Rent Split";
-			};
-			name = Release;
-		};
-		B93BC6C92877613600767701 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 26V9MK8TGP;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "me.kyleggiero.Rent-SplitUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TEST_TARGET_NAME = "Rent Split";
-			};
-			name = Debug;
-		};
-		B93BC6CA2877613600767701 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 26V9MK8TGP;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "me.kyleggiero.Rent-SplitUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TEST_TARGET_NAME = "Rent Split";
 			};
 			name = Release;
 		};
@@ -548,34 +485,36 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B93BC6C22877613600767701 /* Build configuration list for PBXNativeTarget "Rent Split" */ = {
+		B94A530228795F9900C369F8 /* Build configuration list for PBXNativeTarget "Rent Split (iOS)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B93BC6C32877613600767701 /* Debug */,
-				B93BC6C42877613600767701 /* Release */,
+				B94A530328795F9900C369F8 /* Debug */,
+				B94A530428795F9900C369F8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B93BC6C52877613600767701 /* Build configuration list for PBXNativeTarget "Rent SplitTests" */ = {
+		B94A530528795F9900C369F8 /* Build configuration list for PBXNativeTarget "Rent Split (macOS)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B93BC6C62877613600767701 /* Debug */,
-				B93BC6C72877613600767701 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		B93BC6C82877613600767701 /* Build configuration list for PBXNativeTarget "Rent SplitUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B93BC6C92877613600767701 /* Debug */,
-				B93BC6CA2877613600767701 /* Release */,
+				B94A530628795F9900C369F8 /* Debug */,
+				B94A530728795F9900C369F8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B99C79D42879623F00FC5E0C /* RentSplitTools */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = RentSplitTools;
+		};
+		B99C79D62879624500FC5E0C /* RentSplitTools */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = RentSplitTools;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B93BC6952877613100767701 /* Project object */;
 }

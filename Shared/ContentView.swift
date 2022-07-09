@@ -7,10 +7,20 @@
 
 import SwiftUI
 
+import RentSplitTools
+
+
+
 struct ContentView: View {
+    
+    @Environment(\.moneySplitter)
+    private var moneySplitter: MoneySplitter
+    
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        List(moneySplitter.expenses) { expense in
+            Text(expense.name)
+        }
     }
 }
 
