@@ -1,0 +1,3 @@
+[submodule "lib/RentSplitTools"]
+	path = lib/RentSplitTools
+	url = https://github.com/KyLeggiero/RentSplitTools.git
