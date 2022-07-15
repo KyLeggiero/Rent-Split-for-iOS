@@ -18,8 +18,33 @@ struct ContentView: View {
     
     
     var body: some View {
-        List(moneySplitter.expenses) { expense in
-            Text(expense.name)
+        AppBar(position: .bottom) {
+            List {
+                if case .disparateIncomes(roommates: let roommates, expenses: _) = moneySplitter.mode {
+                    Section("Roommates") {
+                        ForEach(roommates) { roommate in
+                            HStack {
+                                Text(roommate.roommate.name)
+                            }
+                        }
+                    }
+                }
+                
+                Section("Expenses") {
+                    ForEach(moneySplitter.expenses) { expense in
+                        HStack {
+                            Text(expense.name)
+                        }
+                    }
+                }
+            }
+        }
+        label: {
+//            Text("Rent Split")
+//                .font(.title.bold())
+            Image("Logo_AppBar")
+                .resizable()
+                .scaledToFit()
         }
     }
 }

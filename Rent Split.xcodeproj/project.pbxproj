@@ -7,16 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B923EC05287BE286004604D8 /* View + Material Elevation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B923EC04287BE286004604D8 /* View + Material Elevation.swift */; };
 		B94A53082879603800C369F8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B93BC6A22877613100767701 /* ContentView.swift */; };
 		B94A53092879603900C369F8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B93BC6A22877613100767701 /* ContentView.swift */; };
 		B94A530A2879603D00C369F8 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = B93BC6A02877613100767701 /* App.swift */; };
 		B94A530B2879603D00C369F8 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = B93BC6A02877613100767701 /* App.swift */; };
+		B971A105287A1568005E90AC /* AppBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B971A104287A1568005E90AC /* AppBar.swift */; };
+		B971A108287B650E005E90AC /* FunctionTools in Frameworks */ = {isa = PBXBuildFile; productRef = B971A107287B650E005E90AC /* FunctionTools */; };
 		B99C79D52879623F00FC5E0C /* RentSplitTools in Frameworks */ = {isa = PBXBuildFile; productRef = B99C79D42879623F00FC5E0C /* RentSplitTools */; };
 		B99C79D72879624500FC5E0C /* RentSplitTools in Frameworks */ = {isa = PBXBuildFile; productRef = B99C79D62879624500FC5E0C /* RentSplitTools */; };
 		B99C79D9287962A000FC5E0C /* MoneySplitter + SwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B99C79D8287962A000FC5E0C /* MoneySplitter + SwiftUI.swift */; };
+		B9FE020028810F3000712ED5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B93BC6A42877613600767701 /* Assets.xcassets */; };
+		B9FE020128810F3000712ED5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B93BC6A42877613600767701 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B923EC04287BE286004604D8 /* View + Material Elevation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View + Material Elevation.swift"; sourceTree = "<group>"; };
 		B93BC6A02877613100767701 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
 		B93BC6A22877613100767701 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B93BC6A42877613600767701 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -25,7 +31,9 @@
 		B94A52F428795F9900C369F8 /* Rent Split.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rent Split.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B94A52F928795F9900C369F8 /* Rent Split.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rent Split.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B94A52FB28795F9900C369F8 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		B971A104287A1568005E90AC /* AppBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppBar.swift; sourceTree = "<group>"; };
 		B99C79D8287962A000FC5E0C /* MoneySplitter + SwiftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MoneySplitter + SwiftUI.swift"; sourceTree = "<group>"; };
+		B9FE01FF28810D5B00712ED5 /* Rent-Split--macOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Rent-Split--macOS--Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B971A108287B650E005E90AC /* FunctionTools in Frameworks */,
 				B99C79D72879624500FC5E0C /* RentSplitTools in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -48,9 +57,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B923EC01287BE25D004604D8 /* SwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				B923EC03287BE26F004604D8 /* Material */,
+				B923EC02287BE265004604D8 /* Neon */,
+			);
+			path = SwiftUI;
+			sourceTree = "<group>";
+		};
+		B923EC02287BE265004604D8 /* Neon */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Neon;
+			sourceTree = "<group>";
+		};
+		B923EC03287BE26F004604D8 /* Material */ = {
+			isa = PBXGroup;
+			children = (
+				B923EC04287BE286004604D8 /* View + Material Elevation.swift */,
+			);
+			path = Material;
+			sourceTree = "<group>";
+		};
 		B93BC6942877613100767701 = {
 			isa = PBXGroup;
 			children = (
+				B9FE01FF28810D5B00712ED5 /* Rent-Split--macOS--Info.plist */,
 				B93BC69F2877613100767701 /* Shared */,
 				B94A52FA28795F9900C369F8 /* macOS */,
 				B94A52E728795EE000C369F8 /* Packages */,
@@ -73,6 +107,7 @@
 			children = (
 				B93BC6A02877613100767701 /* App.swift */,
 				B93BC6A22877613100767701 /* ContentView.swift */,
+				B971A104287A1568005E90AC /* AppBar.swift */,
 				B99C79DA287962A300FC5E0C /* Extensions */,
 				B93BC6A42877613600767701 /* Assets.xcassets */,
 				B93BC6A62877613600767701 /* Preview Content */,
@@ -114,6 +149,7 @@
 		B99C79DA287962A300FC5E0C /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				B923EC01287BE25D004604D8 /* SwiftUI */,
 				B99C79DB287962AC00FC5E0C /* RentSplitTools */,
 			);
 			path = Extensions;
@@ -145,6 +181,7 @@
 			name = "Rent Split (iOS)";
 			packageProductDependencies = (
 				B99C79D62879624500FC5E0C /* RentSplitTools */,
+				B971A107287B650E005E90AC /* FunctionTools */,
 			);
 			productName = "Rent Split (iOS)";
 			productReference = B94A52F428795F9900C369F8 /* Rent Split.app */;
@@ -197,6 +234,9 @@
 				Base,
 			);
 			mainGroup = B93BC6942877613100767701;
+			packageReferences = (
+				B971A106287B650E005E90AC /* XCRemoteSwiftPackageReference "Swift-Function-Tools" */,
+			);
 			productRefGroup = B93BC69E2877613100767701 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -212,6 +252,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B9FE020028810F3000712ED5 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,6 +260,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B9FE020128810F3000712ED5 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -230,7 +272,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B99C79D9287962A000FC5E0C /* MoneySplitter + SwiftUI.swift in Sources */,
+				B971A105287A1568005E90AC /* AppBar.swift in Sources */,
 				B94A530A2879603D00C369F8 /* App.swift in Sources */,
+				B923EC05287BE286004604D8 /* View + Material Elevation.swift in Sources */,
 				B94A53092879603900C369F8 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -434,6 +478,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Rent-Split--macOS--Info.plist";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -460,6 +505,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Rent-Split--macOS--Info.plist";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -505,7 +551,24 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCRemoteSwiftPackageReference section */
+		B971A106287B650E005E90AC /* XCRemoteSwiftPackageReference "Swift-Function-Tools" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/RougeWare/Swift-Function-Tools.git";
+			requirement = {
+				kind = versionRange;
+				maximumVersion = 2.0.0;
+				minimumVersion = 1.2.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
 /* Begin XCSwiftPackageProductDependency section */
+		B971A107287B650E005E90AC /* FunctionTools */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B971A106287B650E005E90AC /* XCRemoteSwiftPackageReference "Swift-Function-Tools" */;
+			productName = FunctionTools;
+		};
 		B99C79D42879623F00FC5E0C /* RentSplitTools */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = RentSplitTools;
