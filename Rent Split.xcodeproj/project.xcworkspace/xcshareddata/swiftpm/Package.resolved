@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "swift-function-tools",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/RougeWare/Swift-Function-Tools.git",
+      "state" : {
+        "revision" : "0bd76ca2c00120acf7ff840b5dcc1e700870ae22",
+        "version" : "1.2.3"
+      }
+    }
+  ],
+  "version" : 2
+}
