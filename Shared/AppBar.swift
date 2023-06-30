@@ -2,7 +2,7 @@
 //  AppBar.swift
 //  Rent Split (iOS)
 //
-//  Created by S🌟System on 2022-07-09.
+//  Created by The Northstar✨ System on 2022-07-09.
 //
 
 import SwiftUI
@@ -29,8 +29,10 @@ public struct AppBar<Content: View, Label: View>: View {
     
     public var body: some View {
         ZStack {
-            content()
-                .padding(position.contentPadding(forAppBarSize: size))
+            NavigationView {
+                content()
+                    .padding(position.contentPadding(forAppBarSize: size))
+            }
             
             position {
                 ZStack {
@@ -41,10 +43,8 @@ public struct AppBar<Content: View, Label: View>: View {
                         .material(elevation: 4)
                     
                     HStack {
-                        if let label = label {
-                            label()
-                                .frame(height: size.height)
-                        }
+                        label()
+                            .frame(height: size.height)
                         
                         Spacer()
                     }
@@ -97,7 +97,7 @@ private extension AppBar.Size {
 private extension AppBar.Position {
     
     @ViewBuilder
-    func callAsFunction<Content: View>(@ViewBuilder content: () -> Content) -> some View {
+    func callAsFunction<BuiltContent: View>(@ViewBuilder content: () -> BuiltContent) -> some View {
         switch self {
         case .bottom:
             VStack {

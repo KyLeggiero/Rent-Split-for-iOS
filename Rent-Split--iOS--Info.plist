@@ -7,10 +7,8 @@
 		<dict>
 			<key>CFBundleTypeName</key>
 			<string>RentSplit</string>
-			<key>CFBundleTypeRole</key>
-			<string>Editor</string>
 			<key>LSHandlerRank</key>
-			<string>Default</string>
+			<string>Owner</string>
 			<key>LSItemContentTypes</key>
 			<array>
 				<string>org.bhstudios.rent-split.iOS-Save-Format</string>
@@ -26,8 +24,8 @@
 			</array>
 			<key>UTTypeDescription</key>
 			<string>RentSplit</string>
-			<key>UTTypeIcons</key>
-			<dict/>
+			<key>UTTypeIconFiles</key>
+			<array/>
 			<key>UTTypeIdentifier</key>
 			<string>org.bhstudios.rent-split.iOS-Save-Format</string>
 			<key>UTTypeTagSpecification</key>

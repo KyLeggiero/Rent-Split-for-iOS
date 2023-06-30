@@ -8,14 +8,14 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "18593550-F64F-4ADF-A68E-B160BEB856B2"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "lib/RentSplitTools/Sources/RentSplitTools/Expense.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "41"
-            endingLineNumber = "41"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
             landmarkName = "init(id:name:rate:participantIds:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -24,7 +24,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "63B2BB31-1309-479F-BF15-189465381779"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "lib/RentSplitTools/Sources/RentSplitTools/AppUniqueIdentifier.swift"
@@ -40,7 +40,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "CDEEBE5D-6D0E-4915-8F19-D667DB1AD7E0"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "lib/RentSplitTools/Sources/RentSplitTools/AppUniqueIdentifier.swift"
@@ -66,6 +66,656 @@
             endingLineNumber = "99"
             landmarkName = "recycle(id:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "48772BEB-D6E5-4E23-92FE-0C414EB07261 - 417b52859e283f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static RentSplitTools.AppUniqueIdentifier.recycle(id: RentSplitTools.AppUniqueIdentifier) -&gt; ()"
+                  moduleName = "Rent Split"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kyleggiero/My%20Drive/Libraries/Projects/From%20Me%202/Apps/Rent%20Split%20for%20iOS/lib/RentSplitTools/Sources/RentSplitTools/AppUniqueIdentifier.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "99"
+                  endingLineNumber = "99"
+                  offsetFromSymbolStart = "325">
+               </Location>
+               <Location
+                  uuid = "48772BEB-D6E5-4E23-92FE-0C414EB07261 - c1e6094e9bdc332c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static RentSplitTools.AppUniqueIdentifier.recycle(id: RentSplitTools.AppUniqueIdentifier) -&gt; ()"
+                  moduleName = "RentSplitToolsTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kyleggiero/My%20Drive/Libraries/Projects/From%20Me%202/Apps/Rent%20Split%20for%20iOS/lib/RentSplitTools/Sources/RentSplitTools/AppUniqueIdentifier.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "99"
+                  endingLineNumber = "99"
+                  offsetFromSymbolStart = "325">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "81FA3E45-FCE4-425D-9F45-C265B67B993B"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "lib/RentSplitTools/Sources/RentSplitTools/MoneySplitter.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "284"
+            endingLineNumber = "284"
+            landmarkName = "calculateShare(for:beneficiarySplits:totalIncomes:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C09A6607-98B2-498B-89B8-F6E669DF9937"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "lib/RentSplitTools/Sources/RentSplitTools/MoneySplitter.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "283"
+            endingLineNumber = "283"
+            landmarkName = "calculateShare(for:beneficiarySplits:totalIncomes:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B436B5FD-92A3-428B-ADEA-173E31962B9C"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Shared/MoneySplitView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "99"
+            endingLineNumber = "99"
+            landmarkName = "body"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "94C41266-9236-4D76-9F31-C90D5852C179"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Shared/MoneySplitView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "98"
+            endingLineNumber = "98"
+            landmarkName = "body"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A52655C9-9335-475B-B1B5-728DEE9626E6"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Shared/MoneySplitView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "97"
+            endingLineNumber = "97"
+            landmarkName = "body"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E472D2EA-76CE-42AC-8480-8C6C7E383120"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "lib/RentSplitTools/Sources/RentSplitTools/MoneySplitter.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
+            landmarkName = "expenses"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "E472D2EA-76CE-42AC-8480-8C6C7E383120 - 7025fa51a6497f30"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RentSplitTools.MoneySplitter.expenses.didset : Swift.Array&lt;RentSplitTools.Expense&gt;"
+                  moduleName = "Rent Split"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kyleggiero/My%20Drive/Libraries/Projects/From%20Me%202/Apps/Rent%20Split%20for%20iOS/lib/RentSplitTools/Sources/RentSplitTools/MoneySplitter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "42"
+                  endingLineNumber = "42"
+                  offsetFromSymbolStart = "20">
+               </Location>
+               <Location
+                  uuid = "E472D2EA-76CE-42AC-8480-8C6C7E383120 - b182884db80b6423"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RentSplitTools.MoneySplitter.expenses.didset : Swift.Array&lt;RentSplitTools.Expense&gt;"
+                  moduleName = "RentSplitToolsTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kyleggiero/My%20Drive/Libraries/Projects/From%20Me%202/Apps/Rent%20Split%20for%20iOS/lib/RentSplitTools/Sources/RentSplitTools/MoneySplitter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "42"
+                  endingLineNumber = "42"
+                  offsetFromSymbolStart = "20">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D3404D6C-46C2-4343-A4D3-EA11EDA35C38"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "lib/RentSplitTools/Sources/RentSplitTools/MoneySplitter.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "205"
+            endingLineNumber = "205"
+            landmarkName = "recalculateSplit()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "D3404D6C-46C2-4343-A4D3-EA11EDA35C38 - ca24424ca71e3c13"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RentSplitTools.MoneySplitter.recalculateSplit() -&gt; ()"
+                  moduleName = "Rent Split"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kyleggiero/My%20Drive/Libraries/Projects/From%20Me%202/Apps/Rent%20Split%20for%20iOS/lib/RentSplitTools/Sources/RentSplitTools/MoneySplitter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "198"
+                  endingLineNumber = "198"
+                  offsetFromSymbolStart = "298">
+               </Location>
+               <Location
+                  uuid = "D3404D6C-46C2-4343-A4D3-EA11EDA35C38 - 389a25092bf40e73"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (RentSplitTools.MoneySplitter.Roommate) -&gt; RentSplitTools.MoneySplitter.Split.RoommateShare in RentSplitTools.MoneySplitter.recalculateSplit() -&gt; ()"
+                  moduleName = "Rent Split"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kyleggiero/My%20Drive/Libraries/Projects/From%20Me%202/Apps/Rent%20Split%20for%20iOS/lib/RentSplitTools/Sources/RentSplitTools/MoneySplitter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "199"
+                  endingLineNumber = "199"
+                  offsetFromSymbolStart = "78">
+               </Location>
+               <Location
+                  uuid = "D3404D6C-46C2-4343-A4D3-EA11EDA35C38 - b833050b95c2700"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RentSplitTools.MoneySplitter.recalculateSplit() -&gt; ()"
+                  moduleName = "RentSplitToolsTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kyleggiero/My%20Drive/Libraries/Projects/From%20Me%202/Apps/Rent%20Split%20for%20iOS/lib/RentSplitTools/Sources/RentSplitTools/MoneySplitter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "198"
+                  endingLineNumber = "198"
+                  offsetFromSymbolStart = "298">
+               </Location>
+               <Location
+                  uuid = "D3404D6C-46C2-4343-A4D3-EA11EDA35C38 - f93d571535b61560"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (RentSplitTools.MoneySplitter.Roommate) -&gt; RentSplitTools.MoneySplitter.Split.RoommateShare in RentSplitTools.MoneySplitter.recalculateSplit() -&gt; ()"
+                  moduleName = "RentSplitToolsTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kyleggiero/My%20Drive/Libraries/Projects/From%20Me%202/Apps/Rent%20Split%20for%20iOS/lib/RentSplitTools/Sources/RentSplitTools/MoneySplitter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "199"
+                  endingLineNumber = "199"
+                  offsetFromSymbolStart = "78">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6027C62D-2E71-47F0-8BFD-8C5377EC2BBB"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "lib/RentSplitTools/Sources/RentSplitTools/MoneySplitter.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "206"
+            endingLineNumber = "206"
+            landmarkName = "recalculateSplit()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "6027C62D-2E71-47F0-8BFD-8C5377EC2BBB - 389a25092bf40e73"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (RentSplitTools.MoneySplitter.Roommate) -&gt; RentSplitTools.MoneySplitter.Split.RoommateShare in RentSplitTools.MoneySplitter.recalculateSplit() -&gt; ()"
+                  moduleName = "Rent Split"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kyleggiero/My%20Drive/Libraries/Projects/From%20Me%202/Apps/Rent%20Split%20for%20iOS/lib/RentSplitTools/Sources/RentSplitTools/MoneySplitter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "199"
+                  endingLineNumber = "199"
+                  offsetFromSymbolStart = "78">
+               </Location>
+               <Location
+                  uuid = "6027C62D-2E71-47F0-8BFD-8C5377EC2BBB - f93d571535b61560"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (RentSplitTools.MoneySplitter.Roommate) -&gt; RentSplitTools.MoneySplitter.Split.RoommateShare in RentSplitTools.MoneySplitter.recalculateSplit() -&gt; ()"
+                  moduleName = "RentSplitToolsTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kyleggiero/My%20Drive/Libraries/Projects/From%20Me%202/Apps/Rent%20Split%20for%20iOS/lib/RentSplitTools/Sources/RentSplitTools/MoneySplitter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "199"
+                  endingLineNumber = "199"
+                  offsetFromSymbolStart = "78">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "86BCCB16-A4EE-4F22-A95C-A12E1E275844"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "lib/RentSplitTools/Sources/RentSplitTools/MoneySplitter.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "295"
+            endingLineNumber = "295"
+            landmarkName = "calculateShare(for:beneficiarySplits:totalIncomes:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "86BCCB16-A4EE-4F22-A95C-A12E1E275844 - b19dd12de9b4380"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RentSplitTools.MoneySplitter.calculateShare(for: RentSplitTools.MoneySplitter.Roommate, beneficiarySplits: Swift.Dictionary&lt;RentSplitTools.AppUniqueIdentifier, Swift.Dictionary&lt;RentSplitTools.AppUniqueIdentifier, RentSplitTools.MoneyPerTime&gt;&gt;, totalIncomes: RentSplitTools.MoneyPerTime) -&gt; RentSplitTools.MoneySplitter.Split.RoommateShare"
+                  moduleName = "Rent Split"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kyleggiero/My%20Drive/Libraries/Projects/From%20Me%202/Apps/Rent%20Split%20for%20iOS/lib/RentSplitTools/Sources/RentSplitTools/MoneySplitter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "288"
+                  endingLineNumber = "288"
+                  offsetFromSymbolStart = "1093">
+               </Location>
+               <Location
+                  uuid = "86BCCB16-A4EE-4F22-A95C-A12E1E275844 - b5c6e644d53b5320"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (RentSplitTools.Expense) -&gt; Swift.Bool in RentSplitTools.MoneySplitter.calculateShare(for: RentSplitTools.MoneySplitter.Roommate, beneficiarySplits: Swift.Dictionary&lt;RentSplitTools.AppUniqueIdentifier, Swift.Dictionary&lt;RentSplitTools.AppUniqueIdentifier, RentSplitTools.MoneyPerTime&gt;&gt;, totalIncomes: RentSplitTools.MoneyPerTime) -&gt; RentSplitTools.MoneySplitter.Split.RoommateShare"
+                  moduleName = "Rent Split"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kyleggiero/My%20Drive/Libraries/Projects/From%20Me%202/Apps/Rent%20Split%20for%20iOS/lib/RentSplitTools/Sources/RentSplitTools/MoneySplitter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "288"
+                  endingLineNumber = "288"
+                  offsetFromSymbolStart = "62">
+               </Location>
+               <Location
+                  uuid = "86BCCB16-A4EE-4F22-A95C-A12E1E275844 - cabeaf0ec0d95893"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RentSplitTools.MoneySplitter.calculateShare(for: RentSplitTools.MoneySplitter.Roommate, beneficiarySplits: Swift.Dictionary&lt;RentSplitTools.AppUniqueIdentifier, Swift.Dictionary&lt;RentSplitTools.AppUniqueIdentifier, RentSplitTools.MoneyPerTime&gt;&gt;, totalIncomes: RentSplitTools.MoneyPerTime) -&gt; RentSplitTools.MoneySplitter.Split.RoommateShare"
+                  moduleName = "RentSplitToolsTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kyleggiero/My%20Drive/Libraries/Projects/From%20Me%202/Apps/Rent%20Split%20for%20iOS/lib/RentSplitTools/Sources/RentSplitTools/MoneySplitter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "288"
+                  endingLineNumber = "288"
+                  offsetFromSymbolStart = "1012">
+               </Location>
+               <Location
+                  uuid = "86BCCB16-A4EE-4F22-A95C-A12E1E275844 - 74619458cb794833"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (RentSplitTools.Expense) -&gt; Swift.Bool in RentSplitTools.MoneySplitter.calculateShare(for: RentSplitTools.MoneySplitter.Roommate, beneficiarySplits: Swift.Dictionary&lt;RentSplitTools.AppUniqueIdentifier, Swift.Dictionary&lt;RentSplitTools.AppUniqueIdentifier, RentSplitTools.MoneyPerTime&gt;&gt;, totalIncomes: RentSplitTools.MoneyPerTime) -&gt; RentSplitTools.MoneySplitter.Split.RoommateShare"
+                  moduleName = "RentSplitToolsTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kyleggiero/My%20Drive/Libraries/Projects/From%20Me%202/Apps/Rent%20Split%20for%20iOS/lib/RentSplitTools/Sources/RentSplitTools/MoneySplitter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "288"
+                  endingLineNumber = "288"
+                  offsetFromSymbolStart = "62">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5C23590E-818D-4001-B89A-7719442DBD82"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "lib/RentSplitTools/Sources/RentSplitTools/MoneySplitter.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "296"
+            endingLineNumber = "296"
+            landmarkName = "calculateShare(for:beneficiarySplits:totalIncomes:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "5C23590E-818D-4001-B89A-7719442DBD82 - b19dd12de9b4461"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RentSplitTools.MoneySplitter.calculateShare(for: RentSplitTools.MoneySplitter.Roommate, beneficiarySplits: Swift.Dictionary&lt;RentSplitTools.AppUniqueIdentifier, Swift.Dictionary&lt;RentSplitTools.AppUniqueIdentifier, RentSplitTools.MoneyPerTime&gt;&gt;, totalIncomes: RentSplitTools.MoneyPerTime) -&gt; RentSplitTools.MoneySplitter.Split.RoommateShare"
+                  moduleName = "Rent Split"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kyleggiero/My%20Drive/Libraries/Projects/From%20Me%202/Apps/Rent%20Split%20for%20iOS/lib/RentSplitTools/Sources/RentSplitTools/MoneySplitter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "289"
+                  endingLineNumber = "289"
+                  offsetFromSymbolStart = "1319">
+               </Location>
+               <Location
+                  uuid = "5C23590E-818D-4001-B89A-7719442DBD82 - 848539219014b72e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (RentSplitTools.Expense) -&gt; RentSplitTools.MoneySplitter.Split.Expense in RentSplitTools.MoneySplitter.calculateShare(for: RentSplitTools.MoneySplitter.Roommate, beneficiarySplits: Swift.Dictionary&lt;RentSplitTools.AppUniqueIdentifier, Swift.Dictionary&lt;RentSplitTools.AppUniqueIdentifier, RentSplitTools.MoneyPerTime&gt;&gt;, totalIncomes: RentSplitTools.MoneyPerTime) -&gt; RentSplitTools.MoneySplitter.Split.RoommateShare"
+                  moduleName = "Rent Split"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kyleggiero/My%20Drive/Libraries/Projects/From%20Me%202/Apps/Rent%20Split%20for%20iOS/lib/RentSplitTools/Sources/RentSplitTools/MoneySplitter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "290"
+                  endingLineNumber = "290"
+                  offsetFromSymbolStart = "171">
+               </Location>
+               <Location
+                  uuid = "5C23590E-818D-4001-B89A-7719442DBD82 - cabeaf0ec0d95f72"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RentSplitTools.MoneySplitter.calculateShare(for: RentSplitTools.MoneySplitter.Roommate, beneficiarySplits: Swift.Dictionary&lt;RentSplitTools.AppUniqueIdentifier, Swift.Dictionary&lt;RentSplitTools.AppUniqueIdentifier, RentSplitTools.MoneyPerTime&gt;&gt;, totalIncomes: RentSplitTools.MoneyPerTime) -&gt; RentSplitTools.MoneySplitter.Split.RoommateShare"
+                  moduleName = "RentSplitToolsTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kyleggiero/My%20Drive/Libraries/Projects/From%20Me%202/Apps/Rent%20Split%20for%20iOS/lib/RentSplitTools/Sources/RentSplitTools/MoneySplitter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "289"
+                  endingLineNumber = "289"
+                  offsetFromSymbolStart = "1238">
+               </Location>
+               <Location
+                  uuid = "5C23590E-818D-4001-B89A-7719442DBD82 - 45224b3d8e56ac3d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (RentSplitTools.Expense) -&gt; RentSplitTools.MoneySplitter.Split.Expense in RentSplitTools.MoneySplitter.calculateShare(for: RentSplitTools.MoneySplitter.Roommate, beneficiarySplits: Swift.Dictionary&lt;RentSplitTools.AppUniqueIdentifier, Swift.Dictionary&lt;RentSplitTools.AppUniqueIdentifier, RentSplitTools.MoneyPerTime&gt;&gt;, totalIncomes: RentSplitTools.MoneyPerTime) -&gt; RentSplitTools.MoneySplitter.Split.RoommateShare"
+                  moduleName = "RentSplitToolsTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kyleggiero/My%20Drive/Libraries/Projects/From%20Me%202/Apps/Rent%20Split%20for%20iOS/lib/RentSplitTools/Sources/RentSplitTools/MoneySplitter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "290"
+                  endingLineNumber = "290"
+                  offsetFromSymbolStart = "171">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D57713C2-16E6-4668-A8C7-13DDA0B50AC8"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "lib/RentSplitTools/Sources/RentSplitTools/MoneySplitter.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "298"
+            endingLineNumber = "298"
+            landmarkName = "calculateShare(for:beneficiarySplits:totalIncomes:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "D57713C2-16E6-4668-A8C7-13DDA0B50AC8 - 848539219014b76c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (RentSplitTools.Expense) -&gt; RentSplitTools.MoneySplitter.Split.Expense in RentSplitTools.MoneySplitter.calculateShare(for: RentSplitTools.MoneySplitter.Roommate, beneficiarySplits: Swift.Dictionary&lt;RentSplitTools.AppUniqueIdentifier, Swift.Dictionary&lt;RentSplitTools.AppUniqueIdentifier, RentSplitTools.MoneyPerTime&gt;&gt;, totalIncomes: RentSplitTools.MoneyPerTime) -&gt; RentSplitTools.MoneySplitter.Split.RoommateShare"
+                  moduleName = "Rent Split"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kyleggiero/My%20Drive/Libraries/Projects/From%20Me%202/Apps/Rent%20Split%20for%20iOS/lib/RentSplitTools/Sources/RentSplitTools/MoneySplitter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "292"
+                  endingLineNumber = "292"
+                  offsetFromSymbolStart = "176">
+               </Location>
+               <Location
+                  uuid = "D57713C2-16E6-4668-A8C7-13DDA0B50AC8 - 45224b3d8e56ac7f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (RentSplitTools.Expense) -&gt; RentSplitTools.MoneySplitter.Split.Expense in RentSplitTools.MoneySplitter.calculateShare(for: RentSplitTools.MoneySplitter.Roommate, beneficiarySplits: Swift.Dictionary&lt;RentSplitTools.AppUniqueIdentifier, Swift.Dictionary&lt;RentSplitTools.AppUniqueIdentifier, RentSplitTools.MoneyPerTime&gt;&gt;, totalIncomes: RentSplitTools.MoneyPerTime) -&gt; RentSplitTools.MoneySplitter.Split.RoommateShare"
+                  moduleName = "RentSplitToolsTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kyleggiero/My%20Drive/Libraries/Projects/From%20Me%202/Apps/Rent%20Split%20for%20iOS/lib/RentSplitTools/Sources/RentSplitTools/MoneySplitter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "292"
+                  endingLineNumber = "292"
+                  offsetFromSymbolStart = "176">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C4CBEB2B-54CD-4BF9-8B8E-3891A3A284C7"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "lib/RentSplitTools/Sources/RentSplitTools/MoneySplitter.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "297"
+            endingLineNumber = "297"
+            landmarkName = "calculateShare(for:beneficiarySplits:totalIncomes:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "C4CBEB2B-54CD-4BF9-8B8E-3891A3A284C7 - 848539219014b72e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (RentSplitTools.Expense) -&gt; RentSplitTools.MoneySplitter.Split.Expense in RentSplitTools.MoneySplitter.calculateShare(for: RentSplitTools.MoneySplitter.Roommate, beneficiarySplits: Swift.Dictionary&lt;RentSplitTools.AppUniqueIdentifier, Swift.Dictionary&lt;RentSplitTools.AppUniqueIdentifier, RentSplitTools.MoneyPerTime&gt;&gt;, totalIncomes: RentSplitTools.MoneyPerTime) -&gt; RentSplitTools.MoneySplitter.Split.RoommateShare"
+                  moduleName = "Rent Split"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kyleggiero/My%20Drive/Libraries/Projects/From%20Me%202/Apps/Rent%20Split%20for%20iOS/lib/RentSplitTools/Sources/RentSplitTools/MoneySplitter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "290"
+                  endingLineNumber = "290"
+                  offsetFromSymbolStart = "171">
+               </Location>
+               <Location
+                  uuid = "C4CBEB2B-54CD-4BF9-8B8E-3891A3A284C7 - 45224b3d8e56ac3d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (RentSplitTools.Expense) -&gt; RentSplitTools.MoneySplitter.Split.Expense in RentSplitTools.MoneySplitter.calculateShare(for: RentSplitTools.MoneySplitter.Roommate, beneficiarySplits: Swift.Dictionary&lt;RentSplitTools.AppUniqueIdentifier, Swift.Dictionary&lt;RentSplitTools.AppUniqueIdentifier, RentSplitTools.MoneyPerTime&gt;&gt;, totalIncomes: RentSplitTools.MoneyPerTime) -&gt; RentSplitTools.MoneySplitter.Split.RoommateShare"
+                  moduleName = "RentSplitToolsTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kyleggiero/My%20Drive/Libraries/Projects/From%20Me%202/Apps/Rent%20Split%20for%20iOS/lib/RentSplitTools/Sources/RentSplitTools/MoneySplitter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "290"
+                  endingLineNumber = "290"
+                  offsetFromSymbolStart = "171">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "48F9060C-9351-4018-A697-3E8AB5CACAB0"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "lib/RentSplitTools/Sources/RentSplitTools/MoneySplitter.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "299"
+            endingLineNumber = "299"
+            landmarkName = "calculateShare(for:beneficiarySplits:totalIncomes:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "48F9060C-9351-4018-A697-3E8AB5CACAB0 - 848539219014b76c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (RentSplitTools.Expense) -&gt; RentSplitTools.MoneySplitter.Split.Expense in RentSplitTools.MoneySplitter.calculateShare(for: RentSplitTools.MoneySplitter.Roommate, beneficiarySplits: Swift.Dictionary&lt;RentSplitTools.AppUniqueIdentifier, Swift.Dictionary&lt;RentSplitTools.AppUniqueIdentifier, RentSplitTools.MoneyPerTime&gt;&gt;, totalIncomes: RentSplitTools.MoneyPerTime) -&gt; RentSplitTools.MoneySplitter.Split.RoommateShare"
+                  moduleName = "Rent Split"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kyleggiero/My%20Drive/Libraries/Projects/From%20Me%202/Apps/Rent%20Split%20for%20iOS/lib/RentSplitTools/Sources/RentSplitTools/MoneySplitter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "292"
+                  endingLineNumber = "292"
+                  offsetFromSymbolStart = "176">
+               </Location>
+               <Location
+                  uuid = "48F9060C-9351-4018-A697-3E8AB5CACAB0 - 45224b3d8e56ac7f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (RentSplitTools.Expense) -&gt; RentSplitTools.MoneySplitter.Split.Expense in RentSplitTools.MoneySplitter.calculateShare(for: RentSplitTools.MoneySplitter.Roommate, beneficiarySplits: Swift.Dictionary&lt;RentSplitTools.AppUniqueIdentifier, Swift.Dictionary&lt;RentSplitTools.AppUniqueIdentifier, RentSplitTools.MoneyPerTime&gt;&gt;, totalIncomes: RentSplitTools.MoneyPerTime) -&gt; RentSplitTools.MoneySplitter.Split.RoommateShare"
+                  moduleName = "RentSplitToolsTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kyleggiero/My%20Drive/Libraries/Projects/From%20Me%202/Apps/Rent%20Split%20for%20iOS/lib/RentSplitTools/Sources/RentSplitTools/MoneySplitter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "292"
+                  endingLineNumber = "292"
+                  offsetFromSymbolStart = "176">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6C774909-A15F-4C72-84B1-D263E1A469A5"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "lib/RentSplitTools/Sources/RentSplitTools/MoneySplitter.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "635"
+            endingLineNumber = "635"
+            landmarkName = "`default`(for:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F977AC54-3081-4E77-B8CB-48850C1CADB8"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "lib/RentSplitTools/Sources/RentSplitTools/MoneyPerTime.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "MoneyPerTime"
+            landmarkType = "14">
+            <Locations>
+               <Location
+                  uuid = "F977AC54-3081-4E77-B8CB-48850C1CADB8 - b701aabb73619af0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RentSplitTools.MoneyPerTime.time.didset : Foundation.Measurement&lt;__C.NSUnitDuration&gt;"
+                  moduleName = "RentSplitToolsTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kyleggiero/My%20Drive/Libraries/Projects/From%20Me%202/Apps/Rent%20Split%20for%20iOS/lib/RentSplitTools/Sources/RentSplitTools/MoneyPerTime.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "93">
+               </Location>
+               <Location
+                  uuid = "F977AC54-3081-4E77-B8CB-48850C1CADB8 - c2ed173ce689a0e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RentSplitTools.MoneyPerTime.time.setter : Foundation.Measurement&lt;__C.NSUnitDuration&gt;"
+                  moduleName = "RentSplitToolsTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kyleggiero/My%20Drive/Libraries/Projects/From%20Me%202/Apps/Rent%20Split%20for%20iOS/lib/RentSplitTools/Sources/RentSplitTools/MoneyPerTime.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "233">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

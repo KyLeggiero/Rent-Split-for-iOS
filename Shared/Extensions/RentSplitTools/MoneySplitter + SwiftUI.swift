@@ -15,7 +15,15 @@ import RentSplitTools
 
 private extension MoneySplitter {
     struct Key: SwiftUI.EnvironmentKey {
-        static var defaultValue = MoneySplitter(mode: .disparateIncomes)
+        private static let holder = Holder()
+        
+        static let defaultValue = holder.$moneySplitter
+        
+        
+        private struct Holder {
+            @State
+            var moneySplitter = MoneySplitter()
+        }
     }
 }
 
@@ -23,7 +31,7 @@ private extension MoneySplitter {
 
 public extension EnvironmentValues {
     
-    var moneySplitter: MoneySplitter {
+    var moneySplitter: Binding<MoneySplitter> {
         get { self[MoneySplitter.Key.self] }
         set { self[MoneySplitter.Key.self] = newValue }
     }
