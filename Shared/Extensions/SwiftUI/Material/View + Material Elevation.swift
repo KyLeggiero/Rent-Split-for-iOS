@@ -2,7 +2,7 @@
 //  View + Material Elevation.swift
 //  Rent Split (iOS)
 //
-//  Created by S🌟System on 2022-07-10.
+//  Created by The Northstar✨ System on 2022-07-10.
 //
 
 import Foundation
