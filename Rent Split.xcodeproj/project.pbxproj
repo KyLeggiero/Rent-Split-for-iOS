@@ -12,6 +12,9 @@
 		B94A53092879603900C369F8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B93BC6A22877613100767701 /* ContentView.swift */; };
 		B94A530A2879603D00C369F8 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = B93BC6A02877613100767701 /* App.swift */; };
 		B94A530B2879603D00C369F8 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = B93BC6A02877613100767701 /* App.swift */; };
+		B94E4F792AAA6382005A4AA0 /* AppUniqueIdentifier in Frameworks */ = {isa = PBXBuildFile; productRef = B94E4F782AAA6382005A4AA0 /* AppUniqueIdentifier */; };
+		B94E4F7B2AAA638E005A4AA0 /* AppUniqueIdentifier in Frameworks */ = {isa = PBXBuildFile; productRef = B94E4F7A2AAA638E005A4AA0 /* AppUniqueIdentifier */; };
+		B94E4F7D2AAB965E005A4AA0 /* OptionalTools in Frameworks */ = {isa = PBXBuildFile; productRef = B94E4F7C2AAB965E005A4AA0 /* OptionalTools */; };
 		B9595E2A28E97E3800258545 /* NumberFormatter + currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9595E2928E97E3800258545 /* NumberFormatter + currency.swift */; };
 		B9595E2B28E97E3800258545 /* NumberFormatter + currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9595E2928E97E3800258545 /* NumberFormatter + currency.swift */; };
 		B964630A290E1D3900CC3701 /* Better initializer ordering.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9646309290E1D3900CC3701 /* Better initializer ordering.swift */; };
@@ -56,6 +59,7 @@
 		B94A52F428795F9900C369F8 /* Rent Split.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rent Split.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B94A52F928795F9900C369F8 /* Rent Split.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rent Split.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B94A52FB28795F9900C369F8 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		B94E4F762AAA635E005A4AA0 /* AppUniqueIdentifier */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = AppUniqueIdentifier; path = "/Users/kyleggiero/Library/Developer/Xcode/DerivedData/Rent_Split-duhdzikygyshlzeuvmbzbmfuisbn/SourcePackages/checkouts/AppUniqueIdentifier"; sourceTree = "<absolute>"; };
 		B9595E2928E97E3800258545 /* NumberFormatter + currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "NumberFormatter + currency.swift"; path = "Foundation/NumberFormatter + currency.swift"; sourceTree = "<group>"; };
 		B9646309290E1D3900CC3701 /* Better initializer ordering.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Better initializer ordering.swift"; sourceTree = "<group>"; };
 		B971A104287A1568005E90AC /* AppBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppBar.swift; sourceTree = "<group>"; };
@@ -79,6 +83,7 @@
 				B98F85DF289CAA610094CC32 /* MultiplicativeArithmetic in Frameworks */,
 				B99C79D72879624500FC5E0C /* RentSplitTools in Frameworks */,
 				B96470A72A3DC51F00F99FD9 /* OptionalTools in Frameworks */,
+				B94E4F792AAA6382005A4AA0 /* AppUniqueIdentifier in Frameworks */,
 				B99E37FE28E38CC400373A0F /* SimpleLogging in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -91,7 +96,9 @@
 				B9FE020D28822E3600712ED5 /* FunctionTools in Frameworks */,
 				B9EF6E3C2884E48A00F006E6 /* BasicMathTools in Frameworks */,
 				B98F85E1289CAA720094CC32 /* MultiplicativeArithmetic in Frameworks */,
+				B94E4F7D2AAB965E005A4AA0 /* OptionalTools in Frameworks */,
 				B99C79D52879623F00FC5E0C /* RentSplitTools in Frameworks */,
+				B94E4F7B2AAA638E005A4AA0 /* AppUniqueIdentifier in Frameworks */,
 				B99E380028E38D5E00373A0F /* SimpleLogging in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -180,6 +187,7 @@
 		B94A52E928795F2800C369F8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B94E4F762AAA635E005A4AA0 /* AppUniqueIdentifier */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -244,6 +252,7 @@
 				B99E37FD28E38CC400373A0F /* SimpleLogging */,
 				B96DE655290ACA40009C68C8 /* RectangleTools */,
 				B96470A62A3DC51F00F99FD9 /* OptionalTools */,
+				B94E4F782AAA6382005A4AA0 /* AppUniqueIdentifier */,
 			);
 			productName = "Rent Split (iOS)";
 			productReference = B94A52F428795F9900C369F8 /* Rent Split.app */;
@@ -269,6 +278,8 @@
 				B98F85E0289CAA720094CC32 /* MultiplicativeArithmetic */,
 				B99E37FF28E38D5E00373A0F /* SimpleLogging */,
 				B96DE657290ACA4F009C68C8 /* RectangleTools */,
+				B94E4F7A2AAA638E005A4AA0 /* AppUniqueIdentifier */,
+				B94E4F7C2AAB965E005A4AA0 /* OptionalTools */,
 			);
 			productName = "Rent Split (macOS)";
 			productReference = B94A52F928795F9900C369F8 /* Rent Split.app */;
@@ -308,6 +319,7 @@
 				B99E37FC28E38CC400373A0F /* XCRemoteSwiftPackageReference "Swift-Simple-Logging" */,
 				B96DE654290ACA40009C68C8 /* XCRemoteSwiftPackageReference "Swift-Rectangle-Tools" */,
 				B96470A52A3DC51F00F99FD9 /* XCRemoteSwiftPackageReference "Swift-Optional-Tools" */,
+				B94E4F772AAA6382005A4AA0 /* XCRemoteSwiftPackageReference "AppUniqueIdentifier" */,
 			);
 			productRefGroup = B93BC69E2877613100767701 /* Products */;
 			projectDirPath = "";
@@ -521,7 +533,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -553,7 +565,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -588,6 +600,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "me.kyleggiero.Rent-Split";
 				PRODUCT_NAME = "Rent Split";
 				SDKROOT = macosx;
@@ -616,6 +629,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "me.kyleggiero.Rent-Split";
 				PRODUCT_NAME = "Rent Split";
 				SDKROOT = macosx;
@@ -657,6 +671,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		B94E4F772AAA6382005A4AA0 /* XCRemoteSwiftPackageReference "AppUniqueIdentifier" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/RougeWare/AppUniqueIdentifier.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
 		B96470A52A3DC51F00F99FD9 /* XCRemoteSwiftPackageReference "Swift-Optional-Tools" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/RougeWare/Swift-Optional-Tools.git";
@@ -703,12 +725,27 @@
 			repositoryURL = "https://github.com/RougeWare/Swift-Basic-Math-Tools";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 1.1.1;
+				minimumVersion = 1.2.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		B94E4F782AAA6382005A4AA0 /* AppUniqueIdentifier */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B94E4F772AAA6382005A4AA0 /* XCRemoteSwiftPackageReference "AppUniqueIdentifier" */;
+			productName = AppUniqueIdentifier;
+		};
+		B94E4F7A2AAA638E005A4AA0 /* AppUniqueIdentifier */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B94E4F772AAA6382005A4AA0 /* XCRemoteSwiftPackageReference "AppUniqueIdentifier" */;
+			productName = AppUniqueIdentifier;
+		};
+		B94E4F7C2AAB965E005A4AA0 /* OptionalTools */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B96470A52A3DC51F00F99FD9 /* XCRemoteSwiftPackageReference "Swift-Optional-Tools" */;
+			productName = OptionalTools;
+		};
 		B96470A62A3DC51F00F99FD9 /* OptionalTools */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = B96470A52A3DC51F00F99FD9 /* XCRemoteSwiftPackageReference "Swift-Optional-Tools" */;
