@@ -17,11 +17,10 @@ import OptionalTools
 @main
 struct App: SwiftUI.App {
     
-    
-    
     var body: some Scene {
         DocumentGroup(editing: RentSplitDataModel.self, contentType: .rentSplit_iOS) {
             ContentView()
+                .modelContainer(for: RentSplitDataModel.self)
         }
     }
 }

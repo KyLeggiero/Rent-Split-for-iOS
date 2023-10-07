@@ -10,10 +10,11 @@ import SwiftData
 @MainActor
 let previewContainer: ModelContainer = {
     let container = try! ModelContainer(
-        for: RentSplitDataModel.self, ModelConfiguration(inMemory: true)
+        for: RentSplitDataModel.self,
+        configurations: ModelConfiguration(isStoredInMemoryOnly: true)
     )
     for split in SampleSplits.allCases {
-        container.mainContext.insert(object: split)
+        container.mainContext.insert(split)
     }
     return container
 }()
