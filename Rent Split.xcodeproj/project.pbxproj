@@ -725,7 +725,7 @@
 			repositoryURL = "https://github.com/RougeWare/Swift-Basic-Math-Tools";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 1.2.0;
+				minimumVersion = 1.2.1;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
