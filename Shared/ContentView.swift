@@ -61,6 +61,10 @@ struct ContentView: View {
                     .scaledToFit()
             }
             .onAppear {
+                if rentSplits.isEmpty {
+                    modelContext.insert(RentSplitDataModel())
+                }
+                
                 currentSplitIndex = rentSplits.startIndex
             }
     }

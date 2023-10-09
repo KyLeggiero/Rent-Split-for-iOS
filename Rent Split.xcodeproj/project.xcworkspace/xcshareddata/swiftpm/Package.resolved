@@ -14,8 +14,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/RougeWare/Swift-Basic-Math-Tools",
       "state" : {
-        "revision" : "b50ea30cbe406f0be9d2b5a732dd3cd6366a585d",
-        "version" : "1.2.0"
+        "revision" : "ff4ca8f51903034562eb08cca20e27a495b72c73",
+        "version" : "1.2.1"
       }
     },
     {
