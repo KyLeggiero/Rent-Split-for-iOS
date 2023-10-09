@@ -54,11 +54,20 @@ struct ContentView: View {
                     }
                 }
             } label: {
-//                Text("Rent Split")
-//                    .font(.title.bold())
-                Image("Logo_AppBar")
-                    .resizable()
-                    .scaledToFit()
+                HStack {
+                    Image("Logo_AppBar")
+                        .resizable()
+                        .scaledToFit()
+                    
+                    Spacer()
+                    
+                    ShareLink(items: rentSplits, subject: Text("Subjective"), message: Text("Massage")) { model in
+                        SharePreview("Rent Splits")
+                    } label: {
+                        Label("Export", systemImage: "square.and.arrow.up")
+                    }
+                    .foregroundStyle(.primary)
+                }
             }
             .onAppear {
                 if rentSplits.isEmpty {

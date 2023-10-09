@@ -5,11 +5,13 @@
 //  Created by The Northstar✨ System on 2023-06-16.
 //
 
+import CoreTransferable
 import Foundation
 import SwiftData
 
 import AppUniqueIdentifier
 import RentSplitTools
+import SerializationTools
 
 
 
@@ -47,5 +49,19 @@ extension RentSplitDataModel: Codable {
     public func encode(to encoder: Encoder) throws {
         var container = encoder.container(keyedBy: CodingKey.self)
         try container.encode(moneySplitter, forKey: .moneySplitter)
+    }
+}
+
+
+
+// MARK: - Transferable
+
+extension RentSplitDataModel: Transferable {
+    public static var transferRepresentation: some TransferRepresentation {
+        DataRepresentation(contentType: .json) { model in
+            try model.jsonData()
+        } importing: { modelData in
+            try RentSplitDataModel(jsonData: modelData)
+        }
     }
 }

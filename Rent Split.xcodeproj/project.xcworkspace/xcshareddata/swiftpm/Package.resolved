@@ -73,6 +73,15 @@
       }
     },
     {
+      "identity" : "swift-serializationtools",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/RougeWare/Swift-SerializationTools.git",
+      "state" : {
+        "revision" : "4d151e1513b04da2ddc9fe464352e4070f7d992f",
+        "version" : "1.1.1"
+      }
+    },
+    {
       "identity" : "swift-simple-logging",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/RougeWare/Swift-Simple-Logging",

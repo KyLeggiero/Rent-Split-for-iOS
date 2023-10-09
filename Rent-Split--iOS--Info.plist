@@ -32,6 +32,25 @@
 			<dict>
 				<key>public.filename-extension</key>
 				<array>
+					<string>rentsplit_apple</string>
+				</array>
+			</dict>
+		</dict>
+		<dict>
+			<key>UTTypeConformsTo</key>
+			<array>
+				<string>public.json</string>
+			</array>
+			<key>UTTypeDescription</key>
+			<string>RentSplit</string>
+			<key>UTTypeIconFiles</key>
+			<array/>
+			<key>UTTypeIdentifier</key>
+			<string>org.bhstudios.rent-split</string>
+			<key>UTTypeTagSpecification</key>
+			<dict>
+				<key>public.filename-extension</key>
+				<array>
 					<string>rentsplit</string>
 				</array>
 			</dict>

@@ -41,6 +41,8 @@
 		B9AC4F662AD37CF90098FBEF /* CollectionTools in Frameworks */ = {isa = PBXBuildFile; productRef = B9AC4F652AD37CF90098FBEF /* CollectionTools */; };
 		B9B691A92A3CDB20005F9121 /* RentSplitDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B691A82A3CDB20005F9121 /* RentSplitDataModel.swift */; };
 		B9B691AA2A3CDB20005F9121 /* RentSplitDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B691A82A3CDB20005F9121 /* RentSplitDataModel.swift */; };
+		B9E29A8A2AD3D17700B295EE /* SerializationTools in Frameworks */ = {isa = PBXBuildFile; productRef = B9E29A892AD3D17700B295EE /* SerializationTools */; };
+		B9E29A8C2AD3D18100B295EE /* SerializationTools in Frameworks */ = {isa = PBXBuildFile; productRef = B9E29A8B2AD3D18100B295EE /* SerializationTools */; };
 		B9EF6E3A2884E44D00F006E6 /* BasicMathTools in Frameworks */ = {isa = PBXBuildFile; productRef = B9EF6E392884E44D00F006E6 /* BasicMathTools */; };
 		B9EF6E3C2884E48A00F006E6 /* BasicMathTools in Frameworks */ = {isa = PBXBuildFile; productRef = B9EF6E3B2884E48A00F006E6 /* BasicMathTools */; };
 		B9FE020828822BE400712ED5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B93BC6A42877613600767701 /* Assets.xcassets */; };
@@ -80,6 +82,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B96DE656290ACA40009C68C8 /* RectangleTools in Frameworks */,
+				B9E29A8A2AD3D17700B295EE /* SerializationTools in Frameworks */,
 				B971A108287B650E005E90AC /* FunctionTools in Frameworks */,
 				B9EF6E3A2884E44D00F006E6 /* BasicMathTools in Frameworks */,
 				B98F85DF289CAA610094CC32 /* MultiplicativeArithmetic in Frameworks */,
@@ -96,6 +99,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B96DE658290ACA4F009C68C8 /* RectangleTools in Frameworks */,
+				B9E29A8C2AD3D18100B295EE /* SerializationTools in Frameworks */,
 				B9FE020D28822E3600712ED5 /* FunctionTools in Frameworks */,
 				B9EF6E3C2884E48A00F006E6 /* BasicMathTools in Frameworks */,
 				B98F85E1289CAA720094CC32 /* MultiplicativeArithmetic in Frameworks */,
@@ -274,6 +278,7 @@
 				B96470A62A3DC51F00F99FD9 /* OptionalTools */,
 				B94E4F782AAA6382005A4AA0 /* AppUniqueIdentifier */,
 				B9AC4F632AD37CEB0098FBEF /* CollectionTools */,
+				B9E29A892AD3D17700B295EE /* SerializationTools */,
 			);
 			productName = "Rent Split (iOS)";
 			productReference = B94A52F428795F9900C369F8 /* Rent Split.app */;
@@ -302,6 +307,7 @@
 				B94E4F7A2AAA638E005A4AA0 /* AppUniqueIdentifier */,
 				B94E4F7C2AAB965E005A4AA0 /* OptionalTools */,
 				B9AC4F652AD37CF90098FBEF /* CollectionTools */,
+				B9E29A8B2AD3D18100B295EE /* SerializationTools */,
 			);
 			productName = "Rent Split (macOS)";
 			productReference = B94A52F928795F9900C369F8 /* Rent Split.app */;
@@ -343,6 +349,7 @@
 				B96470A52A3DC51F00F99FD9 /* XCRemoteSwiftPackageReference "Swift-Optional-Tools" */,
 				B94E4F772AAA6382005A4AA0 /* XCRemoteSwiftPackageReference "AppUniqueIdentifier" */,
 				B9AC4F622AD37C650098FBEF /* XCRemoteSwiftPackageReference "Swift-Collection-Tools" */,
+				B9E29A882AD3D17700B295EE /* XCRemoteSwiftPackageReference "Swift-SerializationTools" */,
 			);
 			productRefGroup = B93BC69E2877613100767701 /* Products */;
 			projectDirPath = "";
@@ -751,6 +758,14 @@
 				minimumVersion = 3.2.0;
 			};
 		};
+		B9E29A882AD3D17700B295EE /* XCRemoteSwiftPackageReference "Swift-SerializationTools" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/RougeWare/Swift-SerializationTools.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.1.1;
+			};
+		};
 		B9EF6E382884E44D00F006E6 /* XCRemoteSwiftPackageReference "Swift-Basic-Math-Tools" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/RougeWare/Swift-Basic-Math-Tools";
@@ -834,6 +849,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = B9AC4F622AD37C650098FBEF /* XCRemoteSwiftPackageReference "Swift-Collection-Tools" */;
 			productName = CollectionTools;
+		};
+		B9E29A892AD3D17700B295EE /* SerializationTools */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B9E29A882AD3D17700B295EE /* XCRemoteSwiftPackageReference "Swift-SerializationTools" */;
+			productName = SerializationTools;
+		};
+		B9E29A8B2AD3D18100B295EE /* SerializationTools */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B9E29A882AD3D17700B295EE /* XCRemoteSwiftPackageReference "Swift-SerializationTools" */;
+			productName = SerializationTools;
 		};
 		B9EF6E392884E44D00F006E6 /* BasicMathTools */ = {
 			isa = XCSwiftPackageProductDependency;
