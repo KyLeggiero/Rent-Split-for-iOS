@@ -37,6 +37,8 @@
 		B9A31D472A4B8DFA006550FA /* PreviewSampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9A31D452A4B8DF9006550FA /* PreviewSampleData.swift */; };
 		B9A31D4A2A4B8F2E006550FA /* Sample data.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9A31D492A4B8F2E006550FA /* Sample data.swift */; };
 		B9A31D4B2A4B8F2E006550FA /* Sample data.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9A31D492A4B8F2E006550FA /* Sample data.swift */; };
+		B9AC4F642AD37CEB0098FBEF /* CollectionTools in Frameworks */ = {isa = PBXBuildFile; productRef = B9AC4F632AD37CEB0098FBEF /* CollectionTools */; };
+		B9AC4F662AD37CF90098FBEF /* CollectionTools in Frameworks */ = {isa = PBXBuildFile; productRef = B9AC4F652AD37CF90098FBEF /* CollectionTools */; };
 		B9B691A92A3CDB20005F9121 /* RentSplitDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B691A82A3CDB20005F9121 /* RentSplitDataModel.swift */; };
 		B9B691AA2A3CDB20005F9121 /* RentSplitDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B691A82A3CDB20005F9121 /* RentSplitDataModel.swift */; };
 		B9EF6E3A2884E44D00F006E6 /* BasicMathTools in Frameworks */ = {isa = PBXBuildFile; productRef = B9EF6E392884E44D00F006E6 /* BasicMathTools */; };
@@ -81,6 +83,7 @@
 				B971A108287B650E005E90AC /* FunctionTools in Frameworks */,
 				B9EF6E3A2884E44D00F006E6 /* BasicMathTools in Frameworks */,
 				B98F85DF289CAA610094CC32 /* MultiplicativeArithmetic in Frameworks */,
+				B9AC4F642AD37CEB0098FBEF /* CollectionTools in Frameworks */,
 				B99C79D72879624500FC5E0C /* RentSplitTools in Frameworks */,
 				B96470A72A3DC51F00F99FD9 /* OptionalTools in Frameworks */,
 				B94E4F792AAA6382005A4AA0 /* AppUniqueIdentifier in Frameworks */,
@@ -96,6 +99,7 @@
 				B9FE020D28822E3600712ED5 /* FunctionTools in Frameworks */,
 				B9EF6E3C2884E48A00F006E6 /* BasicMathTools in Frameworks */,
 				B98F85E1289CAA720094CC32 /* MultiplicativeArithmetic in Frameworks */,
+				B9AC4F662AD37CF90098FBEF /* CollectionTools in Frameworks */,
 				B94E4F7D2AAB965E005A4AA0 /* OptionalTools in Frameworks */,
 				B99C79D52879623F00FC5E0C /* RentSplitTools in Frameworks */,
 				B94E4F7B2AAA638E005A4AA0 /* AppUniqueIdentifier in Frameworks */,
@@ -204,7 +208,7 @@
 			isa = PBXGroup;
 			children = (
 				B923EC01287BE25D004604D8 /* SwiftUI */,
-				B99C79DB287962AC00FC5E0C /* RentSplitTools */,
+				B9AC4F602AD37BF80098FBEF /* RougeWare */,
 				B9595E2928E97E3800258545 /* NumberFormatter + currency.swift */,
 			);
 			path = Extensions;
@@ -226,6 +230,22 @@
 				B9A31D492A4B8F2E006550FA /* Sample data.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		B9AC4F602AD37BF80098FBEF /* RougeWare */ = {
+			isa = PBXGroup;
+			children = (
+				B9AC4F612AD37C000098FBEF /* CollectionTools */,
+				B99C79DB287962AC00FC5E0C /* RentSplitTools */,
+			);
+			path = RougeWare;
+			sourceTree = "<group>";
+		};
+		B9AC4F612AD37C000098FBEF /* CollectionTools */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CollectionTools;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -253,6 +273,7 @@
 				B96DE655290ACA40009C68C8 /* RectangleTools */,
 				B96470A62A3DC51F00F99FD9 /* OptionalTools */,
 				B94E4F782AAA6382005A4AA0 /* AppUniqueIdentifier */,
+				B9AC4F632AD37CEB0098FBEF /* CollectionTools */,
 			);
 			productName = "Rent Split (iOS)";
 			productReference = B94A52F428795F9900C369F8 /* Rent Split.app */;
@@ -280,6 +301,7 @@
 				B96DE657290ACA4F009C68C8 /* RectangleTools */,
 				B94E4F7A2AAA638E005A4AA0 /* AppUniqueIdentifier */,
 				B94E4F7C2AAB965E005A4AA0 /* OptionalTools */,
+				B9AC4F652AD37CF90098FBEF /* CollectionTools */,
 			);
 			productName = "Rent Split (macOS)";
 			productReference = B94A52F928795F9900C369F8 /* Rent Split.app */;
@@ -320,6 +342,7 @@
 				B96DE654290ACA40009C68C8 /* XCRemoteSwiftPackageReference "Swift-Rectangle-Tools" */,
 				B96470A52A3DC51F00F99FD9 /* XCRemoteSwiftPackageReference "Swift-Optional-Tools" */,
 				B94E4F772AAA6382005A4AA0 /* XCRemoteSwiftPackageReference "AppUniqueIdentifier" */,
+				B9AC4F622AD37C650098FBEF /* XCRemoteSwiftPackageReference "Swift-Collection-Tools" */,
 			);
 			productRefGroup = B93BC69E2877613100767701 /* Products */;
 			projectDirPath = "";
@@ -522,7 +545,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 0.2.0;
 				DEVELOPMENT_TEAM = 26V9MK8TGP;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -554,7 +577,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 0.2.0;
 				DEVELOPMENT_TEAM = 26V9MK8TGP;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -720,6 +743,14 @@
 				minimumVersion = 0.5.2;
 			};
 		};
+		B9AC4F622AD37C650098FBEF /* XCRemoteSwiftPackageReference "Swift-Collection-Tools" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/RougeWare/Swift-Collection-Tools.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.2.0;
+			};
+		};
 		B9EF6E382884E44D00F006E6 /* XCRemoteSwiftPackageReference "Swift-Basic-Math-Tools" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/RougeWare/Swift-Basic-Math-Tools";
@@ -793,6 +824,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = B99E37FC28E38CC400373A0F /* XCRemoteSwiftPackageReference "Swift-Simple-Logging" */;
 			productName = SimpleLogging;
+		};
+		B9AC4F632AD37CEB0098FBEF /* CollectionTools */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B9AC4F622AD37C650098FBEF /* XCRemoteSwiftPackageReference "Swift-Collection-Tools" */;
+			productName = CollectionTools;
+		};
+		B9AC4F652AD37CF90098FBEF /* CollectionTools */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B9AC4F622AD37C650098FBEF /* XCRemoteSwiftPackageReference "Swift-Collection-Tools" */;
+			productName = CollectionTools;
 		};
 		B9EF6E392884E44D00F006E6 /* BasicMathTools */ = {
 			isa = XCSwiftPackageProductDependency;

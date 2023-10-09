@@ -19,6 +19,15 @@
       }
     },
     {
+      "identity" : "swift-collection-tools",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/RougeWare/Swift-Collection-Tools.git",
+      "state" : {
+        "revision" : "1918c72a1dabbc3ffb92b7bd3ab84cb565951e50",
+        "version" : "3.2.0"
+      }
+    },
+    {
       "identity" : "swift-function-tools",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/RougeWare/Swift-Function-Tools.git",

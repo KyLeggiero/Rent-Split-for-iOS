@@ -14,13 +14,16 @@ import RectangleTools
 
 struct MoneySplitView: View {
     
+    @Environment(\.editMode)
+    var editMode
+    
     @Binding
     var moneySplitter: MoneySplitter
     
     
     var body: some View {
         List {
-            Section("Roommates") {
+            Section {
                 ForEach(moneySplitter.roommates) { roommate in
                     NavigationLink {
                         Form(content: {
@@ -52,6 +55,27 @@ struct MoneySplitView: View {
                                 .foregroundColor(.secondary)
                         }
                     }
+                }
+                .onDelete { indexSet in
+                    moneySplitter.roommates.remove(atOffsets: indexSet)
+                }
+                .onMove { indices, newOffset in
+                    moneySplitter.roommates.move(fromOffsets: indices, toOffset: newOffset)
+                }
+            } header: {
+                Text("Roommates")
+            } footer: {
+                HStack {
+                    Spacer()
+                    
+                    editOnlyButton {
+                        moneySplitter.add(person: .init(),
+                                          asRoommate: .init(funding: .default))
+                    } label: {
+                        Label("Add a roommate", systemImage: "plus")
+                            .foregroundStyle(.primary)
+                    }
+                    .buttonStyle(.bordered)
                 }
             }
             
@@ -111,8 +135,26 @@ struct MoneySplitView: View {
                         }
                     }
                 }
+                .onDelete { indexSet in
+                    moneySplitter.expenses.remove(atOffsets: indexSet)
+                }
+                .onMove { indices, newOffset in
+                    moneySplitter.expenses.move(fromOffsets: indices, toOffset: newOffset)
+                }
             } footer: {
-                Text("Total: \(moneySplitter.expensesTotal, format: FloatingPointFormatStyle.Currency(code: "USD"))")
+                HStack {
+                    Text("Total: \(moneySplitter.expensesTotal, format: FloatingPointFormatStyle.Currency(code: "USD"))")
+                    
+                    Spacer()
+                    
+                    editOnlyButton {
+                        moneySplitter.addNewExpense()
+                    } label: {
+                        Label("Add an expense", systemImage: "plus")
+                            .foregroundStyle(.primary)
+                    }
+                    .buttonStyle(.bordered)
+                }
             }
             
             Divider()
@@ -124,6 +166,27 @@ struct MoneySplitView: View {
                     Text("\(share.person.name) owes \(share.expenseSum.description)")
                 }
             }
+        }
+        .toolbar(content: EditButton.init)
+    }
+}
+
+
+
+private extension MoneySplitView {
+    @ViewBuilder
+    func editOnlyButton<Label: View>(action: @escaping () -> Void, @ViewBuilder label: @escaping () -> Label) -> some View {
+        switch editMode?.wrappedValue {
+        case .active,
+                .transient:
+                Button(action: action, label: label)
+            
+        case .inactive,
+                .none:
+            EmptyView()
+            
+        @unknown default:
+            EmptyView()
         }
     }
 }
@@ -147,6 +210,7 @@ extension MoneySplitView {
 struct MoneySplitView_Previews: PreviewProvider {
     static var previews: some View {
         Preview()
+            .environment(\.editMode, .constant(.active))
     }
     
     
