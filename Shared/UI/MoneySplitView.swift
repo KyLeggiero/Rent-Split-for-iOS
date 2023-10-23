@@ -7,6 +7,8 @@
 
 import SwiftUI
 
+import AppUniqueIdentifier
+import CollectionTools
 import RentSplitTools
 import RectangleTools
 
@@ -19,6 +21,9 @@ struct MoneySplitView: View {
     
     @Binding
     var moneySplitter: MoneySplitter
+    
+    @State
+    private var showNewBenefactorSelectionSheet: Bool = false
     
     
     var body: some View {
@@ -62,6 +67,7 @@ struct MoneySplitView: View {
                 .onMove { indices, newOffset in
                     moneySplitter.roommates.move(fromOffsets: indices, toOffset: newOffset)
                 }
+                .deleteDisabled(moneySplitter.roommates.count <= 2)
             } header: {
                 Text("Roommates")
             } footer: {
@@ -80,7 +86,9 @@ struct MoneySplitView: View {
             }
             
             if !moneySplitter.benefactors.isEmpty {
-                Section("Benefactors") {
+                Section {
+                    Text("Benefactors")
+                } content: {
                     ForEach(moneySplitter.benefactors) { benefactor in
                         NavigationLink {
                             Form(content: {
@@ -93,7 +101,7 @@ struct MoneySplitView: View {
                                     set: { moneySplitter.set(\.contribution.money, ofBenefactorWithId: benefactor.id, to: $0) }),
                                           formatter: NumberFormatter.currency())
                             })
-                            .navigationTitle(moneySplitter.getOrGenerateName(of: benefactor))
+                            .navigationTitle("Edit Benefactor")
                         } label: {
                             HStack(alignment: .firstTextBaseline) {
                                 Text(moneySplitter.getOrGenerateName(of: benefactor))
@@ -103,6 +111,23 @@ struct MoneySplitView: View {
                             }
                         }
                     }
+                    .onDelete { indexSet in
+                        moneySplitter.benefactors.remove(atOffsets: indexSet)
+                    }
+                    .onMove { indices, newOffset in
+                        moneySplitter.benefactors.move(fromOffsets: indices, toOffset: newOffset)
+                    }
+                } footer: {
+                    add(a: "benefactor") {
+                        showNewBenefactorSelectionSheet = true
+                    }
+                }
+            }
+            else {
+                editOnlyButton {
+                    showNewBenefactorSelectionSheet = true
+                } label: {
+                    Label("Add a benefactor", systemImage: "plus")
                 }
             }
             
@@ -141,19 +166,12 @@ struct MoneySplitView: View {
                 .onMove { indices, newOffset in
                     moneySplitter.expenses.move(fromOffsets: indices, toOffset: newOffset)
                 }
+                .deleteDisabled(moneySplitter.expenses.count <= 1)
             } footer: {
-                HStack {
+                add(a: "expense") {
+                    moneySplitter.addNewExpense()
+                } leadingView: {
                     Text("Total: \(moneySplitter.expensesTotal, format: FloatingPointFormatStyle.Currency(code: "USD"))")
-                    
-                    Spacer()
-                    
-                    editOnlyButton {
-                        moneySplitter.addNewExpense()
-                    } label: {
-                        Label("Add an expense", systemImage: "plus")
-                            .foregroundStyle(.primary)
-                    }
-                    .buttonStyle(.bordered)
                 }
             }
             
@@ -167,13 +185,80 @@ struct MoneySplitView: View {
                 }
             }
         }
+        
         .toolbar(content: EditButton.init)
+        
+        .sheet(isPresented: $showNewBenefactorSelectionSheet) {
+            List(NewBenefactor.allCases(existingPeople: moneySplitter.people)) { newBenefactor2 in
+                Button {
+                    let selectedPerson: Person
+                    switch newBenefactor2 {
+                    case .existingPerson(let person):
+                        selectedPerson = person
+                    case .newPerson:
+                        selectedPerson = .init()
+                        
+                    }
+                    
+                    moneySplitter.add(
+                        person: selectedPerson,
+                        asBenefactor: .init(contribution: 1000 / .month))
+                    
+                    showNewBenefactorSelectionSheet = false
+                } label: {
+                    switch newBenefactor2 {
+                    case .newPerson:
+                        Label("New person", systemImage: "plus")
+                        
+                    case .existingPerson(let person):
+                        Text(person.name)
+                    }
+                }
+            }
+            .presentationDetents([.fraction(0.4)])
+            .overlay {
+                VStack {
+                    Rectangle().fill(Color.red)
+                        .frame(width: 50, height: 8, alignment: .top)
+                        .padding(.top, 8)
+                    
+                    Spacer(minLength: 0)
+                }
+            }
+        }
     }
 }
 
 
 
 private extension MoneySplitView {
+    
+    func add<LeadingView: View>(
+        a itemName: LocalizedStringKey,
+        action: @escaping () -> Void,
+        leadingView: @escaping () -> LeadingView)
+    -> some View {
+        HStack(alignment: .top) {
+            leadingView()
+            
+            Spacer()
+            
+            editOnlyButton {
+                action()
+            } label: {
+                Label("Add an \(Text(itemName))", systemImage: "plus")
+                    .foregroundStyle(.primary)
+            }
+            .buttonStyle(.bordered)
+        }
+    }
+    
+    
+    func add(a itemName: LocalizedStringKey, action: @escaping () -> Void) -> some View {
+        add(a: itemName, action: action, leadingView: EmptyView.init)
+    }
+    
+    
     @ViewBuilder
     func editOnlyButton<Label: View>(action: @escaping () -> Void, @ViewBuilder label: @escaping () -> Label) -> some View {
         switch editMode?.wrappedValue {
@@ -187,6 +272,40 @@ private extension MoneySplitView {
             
         @unknown default:
             EmptyView()
+        }
+    }
+    
+    
+    enum NewBenefactor: Identifiable, Hashable {
+        case existingPerson(Person)
+        case newPerson
+        
+        
+        var id: Person.ID {
+            switch self {
+            case .existingPerson(let person):
+                return person.id
+                
+            case .newPerson:
+                return .privateUse(offset: 0)
+            }
+        }
+        
+        
+        static func allCases(existingPeople: [Person]) -> [Self] {
+            existingPeople.map { .existingPerson($0) }
+            + .newPerson
+        }
+        
+        
+        func hash(into hasher: inout Hasher) {
+            switch self {
+            case .existingPerson(let person):
+                hasher.combine(person.id)
+                
+            case .newPerson:
+                hasher.combine(AppUniqueIdentifier.newPerson)
+            }
         }
     }
 }

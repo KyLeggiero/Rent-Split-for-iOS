@@ -5,8 +5,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/RougeWare/AppUniqueIdentifier.git",
       "state" : {
-        "revision" : "f97e471dcdae85274d83285aaa5bc8934f58ed9a",
-        "version" : "1.0.0"
+        "revision" : "f7385ee489a0693729a638b8deecdf8b3b93f336",
+        "version" : "1.1.0"
       }
     },
     {

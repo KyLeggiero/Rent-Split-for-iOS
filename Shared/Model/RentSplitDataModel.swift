@@ -58,10 +58,10 @@ extension RentSplitDataModel: Codable {
 
 extension RentSplitDataModel: Transferable {
     public static var transferRepresentation: some TransferRepresentation {
-        DataRepresentation(contentType: .json) { model in
-            try model.jsonData()
-        } importing: { modelData in
-            try RentSplitDataModel(jsonData: modelData)
+        DataRepresentation(contentType: .json) { moneySplit in
+            try moneySplit.jsonData()
+        } importing: { splitData in
+            try RentSplitDataModel(MoneySplitter(jsonData: splitData))
         }
     }
 }

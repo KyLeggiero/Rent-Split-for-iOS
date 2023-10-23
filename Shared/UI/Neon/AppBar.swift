@@ -6,6 +6,8 @@
 //
 
 import SwiftUI
+
+import CollectionTools
 import FunctionTools
 
 
@@ -26,19 +28,19 @@ public struct AppBar<Content: View, Label: View>: View {
     @ViewBuilder
     let label: Generator<Label>
     
+    var drawer: Generator<BottomNavigationDrawer>?
+    
     
     public var body: some View {
         ZStack {
-            NavigationView {
-                content()
-                    .padding(position.contentPadding(forAppBarSize: size))
-            }
+            content()
+                .padding(position.contentPadding(forAppBarSize: size))
             
             position {
                 ZStack {
                     Rectangle()
                         .fill(color)
-                        .ignoresSafeArea(edges: .bottom)
+                        .ignoresSafeArea(edges: .all)
                         .frame(height: size.height)
                         .material(elevation: 4)
                     
@@ -46,7 +48,7 @@ public struct AppBar<Content: View, Label: View>: View {
                         label()
                             .frame(height: size.height)
                         
-                        Spacer()
+                        Spacer(minLength: 0)
                     }
                     .multilineTextAlignment(.leading)
                 }
@@ -146,27 +148,42 @@ public extension View {
 
 
 
-struct AppBar_Previews: PreviewProvider {
-    
-    static let formatter: NumberFormatter = {
-        let formatter = NumberFormatter()
-        return formatter
-    }()
-    
-    static var previews: some View {
-        AppBar {
-            List {
-                ForEach(1 ..< 51) { number in
-                    Text("\(number, format: IntegerFormatStyle.init())")
-                }
-            }
-        }
-        label: {
-            Text("App Name Here")
-                .frame(maxHeight: .infinity)
-                .font(.title)
-                .padding(.horizontal)
-//                .background(Color.white)
+#Preview("Simple Test") {
+    AppBar {
+        __50items
+    } label: {
+        Text("App Name Here")
+            .frame(maxHeight: .infinity)
+            .font(.title)
+            .padding(.horizontal)
+//            .background(Color.white)
+    }
+}
+
+
+
+#Preview("Safe Area Fuckery", traits: .portraitUpsideDown) {
+    AppBar {
+        __50items
+    } label: {
+        ZStack {
+            Rectangle()
+                .fill(Color.white.opacity(0.5))
+                .stroke(Color.red, lineWidth: 4)
+                .ignoresSafeArea()
+            
+            Rectangle()
+                .fill(Color.blue)
         }
     }
 }
+
+
+
+private let __50items: some View = {
+    List {
+        ForEach(1 ..< 51) { number in
+            Text("\(number, format: IntegerFormatStyle.init())")
+        }
+    }
+}()
