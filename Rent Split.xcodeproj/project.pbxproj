@@ -13,6 +13,10 @@
 		B90C8EC42AE08B52008756F5 /* NavigationDrawerItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B90C8EC32AE08B52008756F5 /* NavigationDrawerItem.swift */; };
 		B90C8EC52AE08B52008756F5 /* NavigationDrawerItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B90C8EC32AE08B52008756F5 /* NavigationDrawerItem.swift */; };
 		B923EC05287BE286004604D8 /* View + Material Elevation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B923EC04287BE286004604D8 /* View + Material Elevation.swift */; };
+		B93A6A6E2B1F8D6900819FC6 /* Introspection in Frameworks */ = {isa = PBXBuildFile; productRef = B93A6A6D2B1F8D6900819FC6 /* Introspection */; };
+		B93A6A702B1F8D7800819FC6 /* Introspection in Frameworks */ = {isa = PBXBuildFile; productRef = B93A6A6F2B1F8D7800819FC6 /* Introspection */; };
+		B93A6A722B1F92C500819FC6 /* bindPreference.swift in Sources */ = {isa = PBXBuildFile; fileRef = B93A6A712B1F92C500819FC6 /* bindPreference.swift */; };
+		B93A6A732B1F92C500819FC6 /* bindPreference.swift in Sources */ = {isa = PBXBuildFile; fileRef = B93A6A712B1F92C500819FC6 /* bindPreference.swift */; };
 		B94A53082879603800C369F8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B93BC6A22877613100767701 /* ContentView.swift */; };
 		B94A53092879603900C369F8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B93BC6A22877613100767701 /* ContentView.swift */; };
 		B94A530A2879603D00C369F8 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = B93BC6A02877613100767701 /* App.swift */; };
@@ -54,6 +58,10 @@
 		B9B691AA2A3CDB20005F9121 /* RentSplitDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B691A82A3CDB20005F9121 /* RentSplitDataModel.swift */; };
 		B9E29A8A2AD3D17700B295EE /* SerializationTools in Frameworks */ = {isa = PBXBuildFile; productRef = B9E29A892AD3D17700B295EE /* SerializationTools */; };
 		B9E29A8C2AD3D18100B295EE /* SerializationTools in Frameworks */ = {isa = PBXBuildFile; productRef = B9E29A8B2AD3D18100B295EE /* SerializationTools */; };
+		B9E3BEC72AE737FC00F58DAA /* SquishyInteractiveDismiss.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E3BEC62AE737FC00F58DAA /* SquishyInteractiveDismiss.swift */; };
+		B9E3BEC82AE737FC00F58DAA /* SquishyInteractiveDismiss.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E3BEC62AE737FC00F58DAA /* SquishyInteractiveDismiss.swift */; };
+		B9E3BECA2AE73A6A00F58DAA /* dragToDismiss.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E3BEC92AE73A6A00F58DAA /* dragToDismiss.swift */; };
+		B9E3BECB2AE73A6A00F58DAA /* dragToDismiss.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E3BEC92AE73A6A00F58DAA /* dragToDismiss.swift */; };
 		B9EF6E3A2884E44D00F006E6 /* BasicMathTools in Frameworks */ = {isa = PBXBuildFile; productRef = B9EF6E392884E44D00F006E6 /* BasicMathTools */; };
 		B9EF6E3C2884E48A00F006E6 /* BasicMathTools in Frameworks */ = {isa = PBXBuildFile; productRef = B9EF6E3B2884E48A00F006E6 /* BasicMathTools */; };
 		B9FE020828822BE400712ED5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B93BC6A42877613600767701 /* Assets.xcassets */; };
@@ -68,6 +76,7 @@
 		B90C8EC02ADFB9B5008756F5 /* BottomNavigationDrawer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomNavigationDrawer.swift; sourceTree = "<group>"; };
 		B90C8EC32AE08B52008756F5 /* NavigationDrawerItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationDrawerItem.swift; sourceTree = "<group>"; };
 		B923EC04287BE286004604D8 /* View + Material Elevation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View + Material Elevation.swift"; sourceTree = "<group>"; };
+		B93A6A712B1F92C500819FC6 /* bindPreference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bindPreference.swift; sourceTree = "<group>"; };
 		B93BC6A02877613100767701 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
 		B93BC6A22877613100767701 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B93BC6A42877613600767701 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -89,6 +98,8 @@
 		B9B1A8E72AD724DB0068A8CE /* EditMode + conveniences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EditMode + conveniences.swift"; sourceTree = "<group>"; };
 		B9B1A8EC2AD782860068A8CE /* AUID + local constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AUID + local constants.swift"; sourceTree = "<group>"; };
 		B9B691A82A3CDB20005F9121 /* RentSplitDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RentSplitDataModel.swift; sourceTree = "<group>"; };
+		B9E3BEC62AE737FC00F58DAA /* SquishyInteractiveDismiss.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquishyInteractiveDismiss.swift; sourceTree = "<group>"; };
+		B9E3BEC92AE73A6A00F58DAA /* dragToDismiss.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dragToDismiss.swift; sourceTree = "<group>"; };
 		B9FE01FF28810D5B00712ED5 /* Rent-Split--macOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Rent-Split--macOS--Info.plist"; sourceTree = "<group>"; };
 		B9FE020A28822C8A00712ED5 /* Rent-Split--iOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Rent-Split--iOS--Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -106,6 +117,7 @@
 				B98F85DF289CAA610094CC32 /* MultiplicativeArithmetic in Frameworks */,
 				B9AC4F642AD37CEB0098FBEF /* CollectionTools in Frameworks */,
 				B99C79D72879624500FC5E0C /* RentSplitTools in Frameworks */,
+				B93A6A6E2B1F8D6900819FC6 /* Introspection in Frameworks */,
 				B96470A72A3DC51F00F99FD9 /* OptionalTools in Frameworks */,
 				B99E37FE28E38CC400373A0F /* SimpleLogging in Frameworks */,
 			);
@@ -117,6 +129,7 @@
 			files = (
 				B96DE658290ACA4F009C68C8 /* RectangleTools in Frameworks */,
 				B9E29A8C2AD3D18100B295EE /* SerializationTools in Frameworks */,
+				B93A6A702B1F8D7800819FC6 /* Introspection in Frameworks */,
 				B9FE020D28822E3600712ED5 /* FunctionTools in Frameworks */,
 				B9EF6E3C2884E48A00F006E6 /* BasicMathTools in Frameworks */,
 				B98F85E1289CAA720094CC32 /* MultiplicativeArithmetic in Frameworks */,
@@ -135,6 +148,8 @@
 			children = (
 				B971A104287A1568005E90AC /* AppBar.swift */,
 				B90C8EC02ADFB9B5008756F5 /* BottomNavigationDrawer.swift */,
+				B9E3BEC62AE737FC00F58DAA /* SquishyInteractiveDismiss.swift */,
+				B9E3BEC92AE73A6A00F58DAA /* dragToDismiss.swift */,
 				B90C8EC32AE08B52008756F5 /* NavigationDrawerItem.swift */,
 			);
 			path = Neon;
@@ -148,6 +163,7 @@
 				B9646309290E1D3900CC3701 /* Better initializer ordering.swift */,
 				B9B1A8E72AD724DB0068A8CE /* EditMode + conveniences.swift */,
 				B98F8EA62AE4A45D00CD27B9 /* GentleGeometryReader.swift */,
+				B93A6A712B1F92C500819FC6 /* bindPreference.swift */,
 			);
 			path = SwiftUI;
 			sourceTree = "<group>";
@@ -325,6 +341,7 @@
 				B9AC4F632AD37CEB0098FBEF /* CollectionTools */,
 				B9E29A892AD3D17700B295EE /* SerializationTools */,
 				B9014A7F2ADFAD4B00B8A445 /* AppUniqueIdentifier */,
+				B93A6A6D2B1F8D6900819FC6 /* Introspection */,
 			);
 			productName = "Rent Split (iOS)";
 			productReference = B94A52F428795F9900C369F8 /* Rent Split.app */;
@@ -353,6 +370,7 @@
 				B94E4F7C2AAB965E005A4AA0 /* OptionalTools */,
 				B9AC4F652AD37CF90098FBEF /* CollectionTools */,
 				B9E29A8B2AD3D18100B295EE /* SerializationTools */,
+				B93A6A6F2B1F8D7800819FC6 /* Introspection */,
 			);
 			productName = "Rent Split (macOS)";
 			productReference = B94A52F928795F9900C369F8 /* Rent Split.app */;
@@ -395,6 +413,7 @@
 				B9AC4F622AD37C650098FBEF /* XCRemoteSwiftPackageReference "Swift-Collection-Tools" */,
 				B9E29A882AD3D17700B295EE /* XCRemoteSwiftPackageReference "Swift-SerializationTools" */,
 				B9014A7E2ADFAD4B00B8A445 /* XCRemoteSwiftPackageReference "AppUniqueIdentifier" */,
+				B93A6A6C2B1F8D6900819FC6 /* XCRemoteSwiftPackageReference "Swift-Introspection" */,
 			);
 			productRefGroup = B93BC69E2877613100767701 /* Products */;
 			projectDirPath = "";
@@ -432,8 +451,10 @@
 			files = (
 				B964630A290E1D3900CC3701 /* Better initializer ordering.swift in Sources */,
 				B98F8EA72AE4A45D00CD27B9 /* GentleGeometryReader.swift in Sources */,
+				B9E3BEC72AE737FC00F58DAA /* SquishyInteractiveDismiss.swift in Sources */,
 				B9B691A92A3CDB20005F9121 /* RentSplitDataModel.swift in Sources */,
 				B9595E2A28E97E3800258545 /* NumberFormatter + currency.swift in Sources */,
+				B9E3BECA2AE73A6A00F58DAA /* dragToDismiss.swift in Sources */,
 				B99C79D9287962A000FC5E0C /* MoneySplitter + SwiftUI.swift in Sources */,
 				B971A105287A1568005E90AC /* AppBar.swift in Sources */,
 				B9A31D4A2A4B8F2E006550FA /* Sample data.swift in Sources */,
@@ -443,6 +464,7 @@
 				B90C8EC42AE08B52008756F5 /* NavigationDrawerItem.swift in Sources */,
 				B9A31D462A4B8DFA006550FA /* PreviewSampleData.swift in Sources */,
 				B923EC05287BE286004604D8 /* View + Material Elevation.swift in Sources */,
+				B93A6A722B1F92C500819FC6 /* bindPreference.swift in Sources */,
 				B99E380228E4000C00373A0F /* MoneySplitView.swift in Sources */,
 				B90C8EC12ADFB9B5008756F5 /* BottomNavigationDrawer.swift in Sources */,
 				B9B1A8ED2AD782860068A8CE /* AUID + local constants.swift in Sources */,
@@ -456,8 +478,10 @@
 			files = (
 				B964630B290E1D3900CC3701 /* Better initializer ordering.swift in Sources */,
 				B98F8EA82AE4A45D00CD27B9 /* GentleGeometryReader.swift in Sources */,
+				B9E3BEC82AE737FC00F58DAA /* SquishyInteractiveDismiss.swift in Sources */,
 				B9B691AA2A3CDB20005F9121 /* RentSplitDataModel.swift in Sources */,
 				B9595E2B28E97E3800258545 /* NumberFormatter + currency.swift in Sources */,
+				B9E3BECB2AE73A6A00F58DAA /* dragToDismiss.swift in Sources */,
 				B94A530B2879603D00C369F8 /* App.swift in Sources */,
 				B94A53082879603800C369F8 /* ContentView.swift in Sources */,
 				B9A31D4B2A4B8F2E006550FA /* Sample data.swift in Sources */,
@@ -467,6 +491,7 @@
 				B90C8EC52AE08B52008756F5 /* NavigationDrawerItem.swift in Sources */,
 				B9A31D472A4B8DFA006550FA /* PreviewSampleData.swift in Sources */,
 				B9FE020B28822E2A00712ED5 /* AppBar.swift in Sources */,
+				B93A6A732B1F92C500819FC6 /* bindPreference.swift in Sources */,
 				B99E380328E4000C00373A0F /* MoneySplitView.swift in Sources */,
 				B90C8EC22ADFB9B5008756F5 /* BottomNavigationDrawer.swift in Sources */,
 				B9B1A8EE2AD782860068A8CE /* AUID + local constants.swift in Sources */,
@@ -766,6 +791,14 @@
 				minimumVersion = 1.1.0;
 			};
 		};
+		B93A6A6C2B1F8D6900819FC6 /* XCRemoteSwiftPackageReference "Swift-Introspection" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/RougeWare/Swift-Introspection.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.2.0;
+			};
+		};
 		B96470A52A3DC51F00F99FD9 /* XCRemoteSwiftPackageReference "Swift-Optional-Tools" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/RougeWare/Swift-Optional-Tools.git";
@@ -779,7 +812,7 @@
 			repositoryURL = "https://github.com/RougeWare/Swift-Rectangle-Tools.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 2.0.0;
+				minimumVersion = 2.12.2;
 			};
 		};
 		B971A106287B650E005E90AC /* XCRemoteSwiftPackageReference "Swift-Function-Tools" */ = {
@@ -796,7 +829,7 @@
 			repositoryURL = "https://github.com/RougeWare/Swift-MultiplicativeArithmetic.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 1.3.0;
+				minimumVersion = 2.0.0;
 			};
 		};
 		B99E37FC28E38CC400373A0F /* XCRemoteSwiftPackageReference "Swift-Simple-Logging" */ = {
@@ -828,7 +861,7 @@
 			repositoryURL = "https://github.com/RougeWare/Swift-Basic-Math-Tools";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 1.2.1;
+				minimumVersion = 1.3.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
@@ -838,6 +871,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = B9014A7E2ADFAD4B00B8A445 /* XCRemoteSwiftPackageReference "AppUniqueIdentifier" */;
 			productName = AppUniqueIdentifier;
+		};
+		B93A6A6D2B1F8D6900819FC6 /* Introspection */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B93A6A6C2B1F8D6900819FC6 /* XCRemoteSwiftPackageReference "Swift-Introspection" */;
+			productName = Introspection;
+		};
+		B93A6A6F2B1F8D7800819FC6 /* Introspection */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B93A6A6C2B1F8D6900819FC6 /* XCRemoteSwiftPackageReference "Swift-Introspection" */;
+			productName = Introspection;
 		};
 		B94E4F7C2AAB965E005A4AA0 /* OptionalTools */ = {
 			isa = XCSwiftPackageProductDependency;

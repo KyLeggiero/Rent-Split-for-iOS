@@ -35,6 +35,7 @@ private struct MaterialElevation: ViewModifier {
                     radius: config.umbra.radius,
                     x: config.umbra.x,
                     y: config.umbra.y)
+            .animation(.easeInOut, value: config)
     }
 }
 
@@ -48,7 +49,7 @@ private let ambientColor = Color.black.opacity(0.20)
 
 
 private extension MaterialElevation {
-    struct Shadow {
+    struct Shadow: Equatable {
         let umbra: Component
         let penumbra: Component
         let ambient: Component
@@ -57,9 +58,9 @@ private extension MaterialElevation {
         init(umbra: PartialComponent,
              penumbra: PartialComponent,
              ambient: PartialComponent) {
-            self.umbra = .init(color: umbraColor, radius: umbra.radius, x: 0, y: umbra.y)
-            self.penumbra = .init(color: penumbraColor, radius: penumbra.radius, x: 0, y: penumbra.y)
-            self.ambient = .init(color: ambientColor, radius: ambient.radius, x: 0, y: ambient.y)
+            self.umbra = .init(color: umbraColor, radius: umbra.radius, spread: umbra.spread, x: 0, y: umbra.y)
+            self.penumbra = .init(color: penumbraColor, radius: penumbra.radius, spread: penumbra.spread, x: 0, y: penumbra.y)
+            self.ambient = .init(color: ambientColor, radius: ambient.radius, spread: ambient.spread, x: 0, y: ambient.y)
         }
         
         
@@ -70,9 +71,10 @@ private extension MaterialElevation {
 
 
 extension MaterialElevation.Shadow {
-    struct Component {
+    struct Component: Equatable {
         let color: Color
         let radius: CGFloat
+        let spread: CGFloat
         let x: CGFloat
         let y: CGFloat
     }
@@ -99,8 +101,8 @@ private extension MaterialElevation.Shadow {
                                  ambient: PartialComponent(y: 5, radius: 6, spread: 0))
     
     static let elevation8 = Self(umbra: PartialComponent(y: 8, radius: 10, spread: 1),
-                                 penumbra: PartialComponent(y: 3, radius: 14, spread: 2),
-                                 ambient: PartialComponent(y: 4, radius: 15, spread: 0))
+                                 penumbra: PartialComponent(y: 3, radius: 14, spread: 3),
+                                 ambient: PartialComponent(y: 4, radius: 6, spread: 0))
     
     static let elevation6 = Self(umbra: PartialComponent(y: 6, radius: 10, spread: 0),
                                  penumbra: PartialComponent(y: 1, radius: 18, spread: 0),
@@ -114,7 +116,7 @@ private extension MaterialElevation.Shadow {
                                  penumbra: PartialComponent(y: 3, radius: 4, spread: 0),
                                  ambient: PartialComponent(y: 1, radius: 8, spread: 0))
     
-    static let elevation2 = Self(umbra: PartialComponent(y: 0, radius: 40, spread: 0),
+    static let elevation2 = Self(umbra: PartialComponent(y: 0, radius: 4, spread: 0),
                                  penumbra: PartialComponent(y: 3, radius: 4, spread: 0),
                                  ambient: PartialComponent(y: 1, radius: 5, spread: 0))
     
@@ -175,4 +177,72 @@ public extension View {
     func material(elevation: UInt8) -> some View {
         modifier(MaterialElevation(atElevation: elevation))
     }
+}
+
+
+
+private struct MaterialPreview: View {
+    
+    @State
+    var elevation: CGFloat = 4
+    
+    var body: some View {
+        Form {
+            RoundedRectangle(cornerRadius: 25.0)
+                .fill(Color.white)
+                .frame(width: 200, height: 200)
+                .material(elevation: .init(elevation))
+                .overlay {
+                    
+                    Text("\(UInt8(elevation))")
+                        .font(.largeTitle)
+                    
+                    VStack {
+                        Spacer()
+                        
+                        let shadow = MaterialElevation.Shadow(atElevation: UInt8(elevation))
+                        Text(verbatim: shadow.debugDescription)
+                            .font(.caption2)
+                            .foregroundStyle(.secondary)
+                            .padding(.vertical, 8)
+                    }
+                }
+                .frame(maxWidth: .infinity, maxHeight: .infinity)
+                .padding(.vertical, 100)
+            
+            Slider(value: $elevation, in: 0 ... 24, step: 1) {
+                Label("\(UInt8(elevation))", systemImage: "heart")
+            } minimumValueLabel: {
+                Text("0")
+            } maximumValueLabel: {
+                Text("24")
+            }
+        }
+    }
+}
+
+
+
+extension MaterialElevation.Shadow: CustomDebugStringConvertible {
+    var debugDescription: String {
+        """
+        Umbra: \(umbra)
+        Penumbra: \(penumbra)
+        Ambient: \(ambient)
+        """
+    }
+}
+
+
+
+extension MaterialElevation.Shadow.Component: CustomDebugStringConvertible {
+    var debugDescription: String {
+        "{y: \(UInt(y)), blur: \(UInt(radius)), spread: \(UInt(spread))}"
+    }
+}
+
+
+
+#Preview {
+    MaterialPreview()
 }

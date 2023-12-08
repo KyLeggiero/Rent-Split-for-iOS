@@ -8,7 +8,14 @@
 import SwiftUI
 import SwiftData
 
+import Introspection
 import RentSplitTools
+
+
+
+let repoUrl = URL(string: "https://github.com/BlueHuskyStudios/Rent-Split")!
+let bugReportUrl = URL(string: "https://github.com/BlueHuskyStudios/Rent-Split/issues/new/choose")!
+let supportUrl = URL(string: "https://github.com/sponsors/KyLeggiero")!
 
 
 
@@ -26,9 +33,12 @@ struct ContentView: View {
     @Environment(\.modelContext)
     private var modelContext
     
+    @State
+    private var isDrawerShowing = false
+    
     
     var body: some View {
-            AppBar(position: .bottom) {
+            AppBar(position: .bottom, showDrawer: $isDrawerShowing) {
                 if rentSplits.indices.contains(currentSplitIndex) {
                     MoneySplitView(moneySplitter: .init(
                         get: { rentSplits[currentSplitIndex].moneySplitter },
@@ -53,20 +63,57 @@ struct ContentView: View {
                         }
                     }
                 }
-            } label: {
+            } title: {
                 HStack {
                     Image("Logo_AppBar")
                         .resizable()
                         .scaledToFit()
+                        .zIndex(1)
                     
-                    Spacer()
-                    
-                    ShareLink(items: rentSplits, subject: Text("Subjective"), message: Text("Massage")) { model in
-                        SharePreview("Rent Splits")
-                    } label: {
-                        Label("Export", systemImage: "square.and.arrow.up")
+                    if isDrawerShowing {
+                        Text(Introspection.appVersion.description)
+                            .font(.system(size: 24, weight: .black))
+                            .foregroundStyle(.white.opacity(0.5))
+                            .zIndex(0)
+                            .transition(.move(edge: .leading).combined(with: .opacity))
                     }
-                    .foregroundStyle(.primary)
+                }
+                .animation(.easeInOut, value: isDrawerShowing)
+            } accessory: {
+                ShareLink(items: rentSplits, subject: Text("Subjective"), message: Text("Massage")) { model in
+                    SharePreview("Rent Splits")
+                } label: {
+                    Label("Export", systemImage: "square.and.arrow.up")
+                        .padding()
+                }
+                .foregroundStyle(.primary)
+            } drawer: {
+                NavigationDrawerItem(title: "Open another split", icon: .init(systemImage: "folder")) {
+                    // TODO: How do We handle this?
+                }
+                
+                NavigationDrawerItem(title: "Source code & license", icon: .init(systemImage: "chevron.left.forwardslash.chevron.right")) {
+                    #if canImport(UIKit)
+                        UIApplication.shared.open(repoUrl)
+                    #elseif canImport(AppKit)
+                        NSWorkspace.something.something.open(repoUrl)
+                    #endif
+                }
+                
+                NavigationDrawerItem(title: "Report a bug or request a feature", icon: .init(systemImage: "ladybug.fill")) {
+                    #if canImport(UIKit)
+                        UIApplication.shared.open(bugReportUrl)
+                    #elseif canImport(AppKit)
+                        NSWorkspace.something.something.open(bugReportUrl)
+                    #endif
+                }
+                
+                NavigationDrawerItem(title: "Support", icon: .init(systemImage: "heart.fill", color: .accentColor)) {
+                    #if canImport(UIKit)
+                        UIApplication.shared.open(supportUrl)
+                    #elseif canImport(AppKit)
+                        NSWorkspace.something.something.open(supportUrl)
+                    #endif
                 }
             }
             .onAppear {

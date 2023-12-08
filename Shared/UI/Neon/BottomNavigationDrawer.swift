@@ -12,8 +12,11 @@ import FunctionTools
 
 
 
+private let eachLineItemHeight: CGFloat = 48
+private let iconTextSpacing: CGFloat = 24
 private let bottomBleed: CGFloat = 18
 private let cardCornerRadius: CGFloat = 24
+private let dragHandleSize = CGSize(width: 48, height: 4)
 
 
 
@@ -25,6 +28,8 @@ struct BottomNavigationDrawer: ViewModifier {
     @State
     private var dragScrimOffset: CGFloat = 0
     
+    var showDragHandle = true
+    
     @Binding
     var isShowing: Bool
     
@@ -34,6 +39,8 @@ struct BottomNavigationDrawer: ViewModifier {
     
     func body(content: Content) -> some View {
         content
+        
+        // MARK: Scrim
             .overlay {
                 Rectangle()
 //                    .fill(Color.gray)
@@ -45,18 +52,6 @@ struct BottomNavigationDrawer: ViewModifier {
                     .onTapGesture {
                         isShowing = false
                     }
-                    .gesture(DragGesture(minimumDistance: 10)
-                        .onChanged { value in
-                            dragScrimOffset = value.translation.height
-                        }
-                        .onEnded { value in
-                            dragScrimOffset = 0
-                            
-                            if abs(value.translation.height) > 25 {
-                                isShowing = false
-                            }
-                        }
-                    )
                     .transition(.opacity)
                 
                     .opacity(isShowing ? 1 : 0)
@@ -65,54 +60,52 @@ struct BottomNavigationDrawer: ViewModifier {
             }
         
         
+        // MARK: Drawer
             .overlay(alignment: .bottom) {
-                Raw(content: self.content())
-                    .gentleGeometryReader(frame: $frame)
-                    .offset(x: 0, y: isShowing ? 0 : frame.height * 2)
-                    .opacity(isShowing ? 1 : 0)
-                    .animation(.bouncy, value: isShowing)
-                    .offset(y: max(0, dragScrimOffset))
-                    .transformEffect(
-                        .init(scaleX: 1,
-                              y: dragScrimOffset < 0 ? stretch(dragOffset: -dragScrimOffset) : 1)
-                        .translatedBy(x: 0,
-                                      y: dragScrimOffset < 0 ? -stretch(dragOffset: -dragScrimOffset) : 1)
-                    )
-                    .animation(.easeOut, value: dragScrimOffset)
+                Raw(content: self.content(), showDragHandle: showDragHandle)
+                    .squishyInteractiveDismiss(isShowing: $isShowing)
+                    .offset(y: dragScrimOffset)
             }
     }
 }
 
 
 
-private func stretch(dragOffset: CGFloat) -> CGFloat {
-    // https://www.wolframalpha.com/input?i=Plot%5B-1%2F%280.01+x+%2B+1%29%2F4+%2B+1.25%2C+%7Bx%2C+0%2C+1000%7D%2C+%7By%2C+1%2C+1.25%7D%5D
-    ((-1 / ((0.01 * dragOffset) + 1)) / 4) + 1.25
-}
-
-
+// MARK: - Raw drawer
 
 private extension BottomNavigationDrawer {
     struct Raw: View {
         
         let content: [NavigationDrawerItem]
         
+        let showDragHandle: Bool
+        
+        
         var body: some View {
             VStack(spacing: 0) {
                 ForEach(content.indices, id: \.self) { index in
                     content[index]
-                        .frame(minWidth: 48 + 24 + 48, maxWidth: .infinity,
-                               minHeight: 48,          maxHeight: 48)
+                        .frame(minWidth: (eachLineItemHeight*2) + iconTextSpacing, maxWidth: .infinity,
+                               minHeight: eachLineItemHeight,                      maxHeight: eachLineItemHeight)
                 }
                 //                                .border(Color.black)
             }
-            .padding(.bottom, bottomBleed)
-            .offset(y: bottomBleed)
+            .padding(.bottom, bottomBleed + dragHandlePadding)
+//            .padding(.top, dragHandlePadding)
+            .offset(y: bottomBleed + dragHandlePadding)
             .background {
                 UnevenRoundedRectangle(
                     topLeadingRadius: cardCornerRadius,
                     topTrailingRadius: cardCornerRadius)
                 .fill(Color(UIColor.systemBackground))
+                .overlay(alignment: .top) {
+                    if showDragHandle {
+                        Capsule(style: .continuous)
+                            .fill(.secondary.opacity(0.5))
+                            .frame(width: dragHandleSize.width, height: dragHandleSize.height)
+                            .padding(.top, dragHandlePadding / 2)
+                    }
+                }
                 .offset(y: bottomBleed)
                 //                                .frame(minWidth: 200, maxWidth: .infinity,
                 //                                       minHeight: 64, maxHeight: .infinity)
@@ -128,6 +121,26 @@ private extension BottomNavigationDrawer {
             }
 //            .transition(.move(edge: .bottom).combined(with: .opacity))
         }
+        
+        
+        var dragHandlePadding: CGFloat {
+            showDragHandle
+                ? dragHandleSize.height * 3
+                : 0
+        }
+    }
+}
+
+
+
+// MARK: - Public API
+
+public extension View {
+    func bottomNavigationDrawer(
+        isShowing: Binding<Bool>,
+        @ArrayBuilder<NavigationDrawerItem> content: @escaping Generator<[NavigationDrawerItem]>)
+    -> some View {
+        modifier(BottomNavigationDrawer(isShowing: isShowing, content: content))
     }
 }
 
@@ -142,38 +155,35 @@ private extension BottomNavigationDrawer {
 private struct Preview: View {
     
     @State
-    private var isShowing = true
+    var showDragHandle = true
+    
+    @State
+    var isDrawerShowing = false
     
     var body: some View {
-        AppBar {
-            Form {
-                Toggle("Show", isOn: $isShowing.animation(.bouncy))
+        Form {
+            Toggle("Show drag handle", isOn: $showDragHandle)
+            Button("Show nav drawer", action: { isDrawerShowing.toggle() })
+            
+            Group {
                 Image(systemName: "circle.hexagongrid.fill")
-                        .symbolRenderingMode(.multicolor)
-                        .font(.system(size: 256))
-                
                 Image(systemName: "paintpalette.fill")
-                        .symbolRenderingMode(.multicolor)
-                        .font(.system(size: 256))
             }
-            .modifier(BottomNavigationDrawer(isShowing: $isShowing) {
-                NavigationDrawerItem(
-                    title: "Top Item",
-                    icon: .init(systemImage: "arrow.up")) {}
-                
-                NavigationDrawerItem(
-                    title: "Mid Item",
-                    icon: .init(systemImage: "square.3.layers.3d.middle.filled", color: .accentColor)) {}
-                
-                NavigationDrawerItem(
-                    title: "Bottom Item",
-                    icon: .init(systemImage: "arrow.down.left")) {}
-            })
-        } label: {
-            Button("Drawer") {
-                isShowing.toggle()
-            }
-            .foregroundStyle(.primary)
+            .font(.system(size: 256))
+        }
+        .symbolRenderingMode(.multicolor)
+        .bottomNavigationDrawer(isShowing: $isDrawerShowing) {
+            NavigationDrawerItem(
+                title: "Top Item",
+                icon: .init(systemImage: "arrow.up")) {}
+            
+            NavigationDrawerItem(
+                title: "Mid Item",
+                icon: .init(systemImage: "square.3.layers.3d.middle.filled", color: .accentColor)) {}
+            
+            NavigationDrawerItem(
+                title: "Bottom Item",
+                icon: .init(systemImage: "arrow.down.left")) {}
         }
 //        .background(Color.accentColor.opacity(0.5))
     }

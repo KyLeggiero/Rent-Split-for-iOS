@@ -79,12 +79,12 @@ public extension NavigationDrawerItem.Icon {
             icon: .init(systemImage: "heart.fill", color: .red)) {
                 print("Supported!")
             }
-            .border(Color.red)
+//            .border(Color.red)
         NavigationDrawerItem(
             title: "Favorites",
             icon: .init(systemImage: "star")) {
                 print("Supported!")
             }
-            .border(Color.red)
+//            .border(Color.red)
     }
 }
