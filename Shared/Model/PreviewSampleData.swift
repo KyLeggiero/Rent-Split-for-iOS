@@ -13,8 +13,10 @@ let previewContainer: ModelContainer = {
         for: RentSplitDataModel.self,
         configurations: ModelConfiguration(isStoredInMemoryOnly: true)
     )
+    
     for split in SampleSplits.allCases {
         container.mainContext.insert(split)
     }
+    
     return container
 }()

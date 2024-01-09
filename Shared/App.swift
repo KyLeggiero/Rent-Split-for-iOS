@@ -18,10 +18,12 @@ import OptionalTools
 struct App: SwiftUI.App {
     
     var body: some Scene {
-        DocumentGroup(editing: RentSplitDataModel.self, contentType: .rentSplit_iOS) {
-            ContentView()
-                .modelContainer(for: RentSplitDataModel.self)
+        WindowGroup {
+            NavigationView {
+                ContentView()
+            }
         }
+        .modelContainer(for: RentSplitDataModel.self, inMemory: false, isAutosaveEnabled: true, isUndoEnabled: true)
     }
 }
 

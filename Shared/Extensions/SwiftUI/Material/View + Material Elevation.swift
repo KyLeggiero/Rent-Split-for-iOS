@@ -183,26 +183,31 @@ public extension View {
 
 private struct MaterialPreview: View {
     
+    @Environment(\.colorScheme)
+    private var colorScheme
+    
     @State
-    var elevation: CGFloat = 4
+    private var elevation: CGFloat = 4
     
     var body: some View {
         Form {
             RoundedRectangle(cornerRadius: 25.0)
-                .fill(Color.white)
+                .fill(colorScheme == .dark
+                      ? Color(.sRGB, red: 38/255, green: 50/255, blue: 56/255)
+                      : Color(.sRGB, red: 0, green: 188/255, blue: 212/255))
                 .frame(width: 200, height: 200)
                 .material(elevation: .init(elevation))
                 .overlay {
                     
                     Text("\(UInt8(elevation))")
-                        .font(.largeTitle)
+                        .font(.largeTitle.monospacedDigit().weight(.black))
                     
                     VStack {
                         Spacer()
                         
                         let shadow = MaterialElevation.Shadow(atElevation: UInt8(elevation))
                         Text(verbatim: shadow.debugDescription)
-                            .font(.caption2)
+                            .font(.caption2.monospacedDigit())
                             .foregroundStyle(.secondary)
                             .padding(.vertical, 8)
                     }

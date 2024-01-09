@@ -31,6 +31,8 @@
 		B96DE658290ACA4F009C68C8 /* RectangleTools in Frameworks */ = {isa = PBXBuildFile; productRef = B96DE657290ACA4F009C68C8 /* RectangleTools */; };
 		B971A105287A1568005E90AC /* AppBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B971A104287A1568005E90AC /* AppBar.swift */; };
 		B971A108287B650E005E90AC /* FunctionTools in Frameworks */ = {isa = PBXBuildFile; productRef = B971A107287B650E005E90AC /* FunctionTools */; };
+		B9757B3B2B281FEC00730D9D /* PersonColor + SwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9757B3A2B281FEC00730D9D /* PersonColor + SwiftUI.swift */; };
+		B9757B3C2B281FEC00730D9D /* PersonColor + SwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9757B3A2B281FEC00730D9D /* PersonColor + SwiftUI.swift */; };
 		B98F85DF289CAA610094CC32 /* MultiplicativeArithmetic in Frameworks */ = {isa = PBXBuildFile; productRef = B98F85DE289CAA610094CC32 /* MultiplicativeArithmetic */; };
 		B98F85E1289CAA720094CC32 /* MultiplicativeArithmetic in Frameworks */ = {isa = PBXBuildFile; productRef = B98F85E0289CAA720094CC32 /* MultiplicativeArithmetic */; };
 		B98F8EA72AE4A45D00CD27B9 /* GentleGeometryReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B98F8EA62AE4A45D00CD27B9 /* GentleGeometryReader.swift */; };
@@ -64,6 +66,10 @@
 		B9E3BECB2AE73A6A00F58DAA /* dragToDismiss.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E3BEC92AE73A6A00F58DAA /* dragToDismiss.swift */; };
 		B9EF6E3A2884E44D00F006E6 /* BasicMathTools in Frameworks */ = {isa = PBXBuildFile; productRef = B9EF6E392884E44D00F006E6 /* BasicMathTools */; };
 		B9EF6E3C2884E48A00F006E6 /* BasicMathTools in Frameworks */ = {isa = PBXBuildFile; productRef = B9EF6E3B2884E48A00F006E6 /* BasicMathTools */; };
+		B9F12F652B224DD100035014 /* MoneySplitChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F12F642B224DD100035014 /* MoneySplitChart.swift */; };
+		B9F12F662B224DD100035014 /* MoneySplitChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F12F642B224DD100035014 /* MoneySplitChart.swift */; };
+		B9F12F692B23AC0500035014 /* CrossKitTypes in Frameworks */ = {isa = PBXBuildFile; productRef = B9F12F682B23AC0500035014 /* CrossKitTypes */; };
+		B9F12F6B2B23AC0C00035014 /* CrossKitTypes in Frameworks */ = {isa = PBXBuildFile; productRef = B9F12F6A2B23AC0C00035014 /* CrossKitTypes */; };
 		B9FE020828822BE400712ED5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B93BC6A42877613600767701 /* Assets.xcassets */; };
 		B9FE020928822BE500712ED5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B93BC6A42877613600767701 /* Assets.xcassets */; };
 		B9FE020B28822E2A00712ED5 /* AppBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B971A104287A1568005E90AC /* AppBar.swift */; };
@@ -89,6 +95,7 @@
 		B9595E2928E97E3800258545 /* NumberFormatter + currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "NumberFormatter + currency.swift"; path = "Foundation/NumberFormatter + currency.swift"; sourceTree = "<group>"; };
 		B9646309290E1D3900CC3701 /* Better initializer ordering.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Better initializer ordering.swift"; sourceTree = "<group>"; };
 		B971A104287A1568005E90AC /* AppBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppBar.swift; sourceTree = "<group>"; };
+		B9757B3A2B281FEC00730D9D /* PersonColor + SwiftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PersonColor + SwiftUI.swift"; sourceTree = "<group>"; };
 		B98F8EA62AE4A45D00CD27B9 /* GentleGeometryReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GentleGeometryReader.swift; sourceTree = "<group>"; };
 		B99C79D8287962A000FC5E0C /* MoneySplitter + SwiftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MoneySplitter + SwiftUI.swift"; sourceTree = "<group>"; };
 		B99E380128E4000C00373A0F /* MoneySplitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneySplitView.swift; sourceTree = "<group>"; };
@@ -100,6 +107,7 @@
 		B9B691A82A3CDB20005F9121 /* RentSplitDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RentSplitDataModel.swift; sourceTree = "<group>"; };
 		B9E3BEC62AE737FC00F58DAA /* SquishyInteractiveDismiss.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquishyInteractiveDismiss.swift; sourceTree = "<group>"; };
 		B9E3BEC92AE73A6A00F58DAA /* dragToDismiss.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dragToDismiss.swift; sourceTree = "<group>"; };
+		B9F12F642B224DD100035014 /* MoneySplitChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneySplitChart.swift; sourceTree = "<group>"; };
 		B9FE01FF28810D5B00712ED5 /* Rent-Split--macOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Rent-Split--macOS--Info.plist"; sourceTree = "<group>"; };
 		B9FE020A28822C8A00712ED5 /* Rent-Split--iOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Rent-Split--iOS--Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -109,6 +117,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B9F12F692B23AC0500035014 /* CrossKitTypes in Frameworks */,
 				B96DE656290ACA40009C68C8 /* RectangleTools in Frameworks */,
 				B9E29A8A2AD3D17700B295EE /* SerializationTools in Frameworks */,
 				B9014A802ADFAD4B00B8A445 /* AppUniqueIdentifier in Frameworks */,
@@ -132,6 +141,7 @@
 				B93A6A702B1F8D7800819FC6 /* Introspection in Frameworks */,
 				B9FE020D28822E3600712ED5 /* FunctionTools in Frameworks */,
 				B9EF6E3C2884E48A00F006E6 /* BasicMathTools in Frameworks */,
+				B9F12F6B2B23AC0C00035014 /* CrossKitTypes in Frameworks */,
 				B98F85E1289CAA720094CC32 /* MultiplicativeArithmetic in Frameworks */,
 				B9AC4F662AD37CF90098FBEF /* CollectionTools in Frameworks */,
 				B94E4F7D2AAB965E005A4AA0 /* OptionalTools in Frameworks */,
@@ -264,6 +274,7 @@
 			isa = PBXGroup;
 			children = (
 				B99C79D8287962A000FC5E0C /* MoneySplitter + SwiftUI.swift */,
+				B9757B3A2B281FEC00730D9D /* PersonColor + SwiftUI.swift */,
 			);
 			path = RentSplitTools;
 			sourceTree = "<group>";
@@ -300,6 +311,7 @@
 			children = (
 				B93BC6A22877613100767701 /* ContentView.swift */,
 				B99E380128E4000C00373A0F /* MoneySplitView.swift */,
+				B9F12F642B224DD100035014 /* MoneySplitChart.swift */,
 				B90C8EBF2ADFB9A8008756F5 /* Neon */,
 				B9A6D7F02ADA165D00760318 /* Logo.swift */,
 			);
@@ -342,6 +354,7 @@
 				B9E29A892AD3D17700B295EE /* SerializationTools */,
 				B9014A7F2ADFAD4B00B8A445 /* AppUniqueIdentifier */,
 				B93A6A6D2B1F8D6900819FC6 /* Introspection */,
+				B9F12F682B23AC0500035014 /* CrossKitTypes */,
 			);
 			productName = "Rent Split (iOS)";
 			productReference = B94A52F428795F9900C369F8 /* Rent Split.app */;
@@ -371,6 +384,7 @@
 				B9AC4F652AD37CF90098FBEF /* CollectionTools */,
 				B9E29A8B2AD3D18100B295EE /* SerializationTools */,
 				B93A6A6F2B1F8D7800819FC6 /* Introspection */,
+				B9F12F6A2B23AC0C00035014 /* CrossKitTypes */,
 			);
 			productName = "Rent Split (macOS)";
 			productReference = B94A52F928795F9900C369F8 /* Rent Split.app */;
@@ -414,6 +428,7 @@
 				B9E29A882AD3D17700B295EE /* XCRemoteSwiftPackageReference "Swift-SerializationTools" */,
 				B9014A7E2ADFAD4B00B8A445 /* XCRemoteSwiftPackageReference "AppUniqueIdentifier" */,
 				B93A6A6C2B1F8D6900819FC6 /* XCRemoteSwiftPackageReference "Swift-Introspection" */,
+				B9F12F672B22898900035014 /* XCRemoteSwiftPackageReference "Swift-Cross-Kit-Types" */,
 			);
 			productRefGroup = B93BC69E2877613100767701 /* Products */;
 			projectDirPath = "";
@@ -452,6 +467,8 @@
 				B964630A290E1D3900CC3701 /* Better initializer ordering.swift in Sources */,
 				B98F8EA72AE4A45D00CD27B9 /* GentleGeometryReader.swift in Sources */,
 				B9E3BEC72AE737FC00F58DAA /* SquishyInteractiveDismiss.swift in Sources */,
+				B9F12F652B224DD100035014 /* MoneySplitChart.swift in Sources */,
+				B9757B3B2B281FEC00730D9D /* PersonColor + SwiftUI.swift in Sources */,
 				B9B691A92A3CDB20005F9121 /* RentSplitDataModel.swift in Sources */,
 				B9595E2A28E97E3800258545 /* NumberFormatter + currency.swift in Sources */,
 				B9E3BECA2AE73A6A00F58DAA /* dragToDismiss.swift in Sources */,
@@ -479,6 +496,8 @@
 				B964630B290E1D3900CC3701 /* Better initializer ordering.swift in Sources */,
 				B98F8EA82AE4A45D00CD27B9 /* GentleGeometryReader.swift in Sources */,
 				B9E3BEC82AE737FC00F58DAA /* SquishyInteractiveDismiss.swift in Sources */,
+				B9F12F662B224DD100035014 /* MoneySplitChart.swift in Sources */,
+				B9757B3C2B281FEC00730D9D /* PersonColor + SwiftUI.swift in Sources */,
 				B9B691AA2A3CDB20005F9121 /* RentSplitDataModel.swift in Sources */,
 				B9595E2B28E97E3800258545 /* NumberFormatter + currency.swift in Sources */,
 				B9E3BECB2AE73A6A00F58DAA /* dragToDismiss.swift in Sources */,
@@ -829,7 +848,7 @@
 			repositoryURL = "https://github.com/RougeWare/Swift-MultiplicativeArithmetic.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 2.0.0;
+				minimumVersion = 1.4.1;
 			};
 		};
 		B99E37FC28E38CC400373A0F /* XCRemoteSwiftPackageReference "Swift-Simple-Logging" */ = {
@@ -862,6 +881,14 @@
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 1.3.0;
+			};
+		};
+		B9F12F672B22898900035014 /* XCRemoteSwiftPackageReference "Swift-Cross-Kit-Types" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/RougeWare/Swift-Cross-Kit-Types.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
@@ -964,6 +991,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = B9EF6E382884E44D00F006E6 /* XCRemoteSwiftPackageReference "Swift-Basic-Math-Tools" */;
 			productName = BasicMathTools;
+		};
+		B9F12F682B23AC0500035014 /* CrossKitTypes */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B9F12F672B22898900035014 /* XCRemoteSwiftPackageReference "Swift-Cross-Kit-Types" */;
+			productName = CrossKitTypes;
+		};
+		B9F12F6A2B23AC0C00035014 /* CrossKitTypes */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B9F12F672B22898900035014 /* XCRemoteSwiftPackageReference "Swift-Cross-Kit-Types" */;
+			productName = CrossKitTypes;
 		};
 		B9FE020C28822E3600712ED5 /* FunctionTools */ = {
 			isa = XCSwiftPackageProductDependency;

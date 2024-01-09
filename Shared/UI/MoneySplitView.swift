@@ -75,7 +75,7 @@ struct MoneySplitView: View {
                     Spacer()
                     
                     editOnlyButton {
-                        moneySplitter.add(person: .init(),
+                        moneySplitter.add(person: .init(color: .auto(numberOfExistingPeople: moneySplitter.people.count)),
                                           asRoommate: .init(funding: .default))
                     } label: {
                         Label("Add a roommate", systemImage: "plus")
@@ -179,11 +179,15 @@ struct MoneySplitView: View {
                 .listRowBackground(Color.clear)
             
             Section("Split") {
-                ForEach(moneySplitter.split.shares) { share in
-//                    Text(share.person.name)
-                    Text("\(share.person.name) owes \(share.expenseSum.description)")
-                }
+                MoneySplitChart(split: moneySplitter)
+                    .frame(height: 200)
+//                ForEach(moneySplitter.split.shares) { share in
+////                    Text(share.person.name)
+//                    Text("\(share.person.name) owes \(share.expenseSum.description)")
+//                }
             }
+            .listStyle(.plain)
+            .background(.clear)
         }
         
         .toolbar(content: EditButton.init)
@@ -195,14 +199,14 @@ struct MoneySplitView: View {
                     switch newBenefactor2 {
                     case .existingPerson(let person):
                         selectedPerson = person
-                    case .newPerson:
-                        selectedPerson = .init()
                         
+                    case .newPerson:
+                        selectedPerson = .init(color: .auto(for: moneySplitter))
                     }
                     
                     moneySplitter.add(
                         person: selectedPerson,
-                        asBenefactor: .init(contribution: 1000 / .month))
+                        asBenefactor: .init())
                     
                     showNewBenefactorSelectionSheet = false
                 } label: {
@@ -337,7 +341,7 @@ struct MoneySplitView_Previews: PreviewProvider {
     struct Preview: View {
         
         @State
-        var moneySplitter = MoneySplitter()
+        var moneySplitter = MoneySplitter.demo
         
         var body: some View {
             NavigationView {
